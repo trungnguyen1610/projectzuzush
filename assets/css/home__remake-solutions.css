@@ -1,0 +1,71 @@
+.vsi-fe3-our-solutions{
+    background-color: var(--light-gray);
+    
+}
+.vsi-fe3-our-solutions__left-title{
+    position: relative;
+    letter-spacing: 5px;
+    padding-bottom:18px;
+    font-size: 12px;
+}
+
+.vsi-fe3-our-solutions__left-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+  
+    height: 1px;
+    width: 40px;
+    background-color: var(--black);
+
+}
+
+.vsi-fe3-our-solutions__content-left p{
+    font-size: 28px;
+}
+.vsi-fe3-our-solutions__content-left a{
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: 500;
+}
+.fe3-our-soluvsi-tions__left-icon{
+    font-size: 12px;
+    color: var(--orange);
+}
+
+.vsi-fe3-our-solutions__content-left a:hover {
+    text-decoration: none;
+    margin-right: 5px;
+    color: var(--orange);
+}
+
+.fe3-our-soluvsi-tions__left-btn{
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--orange);
+    margin-right: 0;
+}
+.fe3-our-soluvsi-tions__left-btn:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--orange);
+    margin-right: 5px;
+}
+
+.vsi-fe3-our-solutions__content-right{
+    background-image: url("../images/our-solutions/case.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 370px;
+    /* max-width: 100%; */
+    max-height: 100%;
+    text-align: center;
+    
+  
+}
+
+.vsi-fe3-our-solutions__content-right--case{
+    display: inline-block;
+}
