@@ -6,3 +6,130 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.vsi-fe1-difference .vsi-fe1-human{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.vsi-fe1-difference .vsi-fe1-human h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--black);
+
+}
+.vsi-fe1-difference .vsi-fe1-human .vsi-fe1-icon{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vsi-fe1-difference .vsi-fe1-revenue{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.vsi-fe1-difference .vsi-fe1-revenue h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--black);
+
+}
+.vsi-fe1-difference .vsi-fe1-revenue .vsi-fe1-icon{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vsi-fe1-difference .vsi-fe1-extension{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.vsi-fe1-difference .vsi-fe1-extension h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--black);
+
+}
+.vsi-fe1-difference .vsi-fe1-extension .vsi-fe1-icon{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+lottie-player{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.vsi-fe1-text-content{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+}
+.vsi-fe1-text-content .vsi-fe1-text{
+    color: var(--black);
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0;
+    margin: 10px 0; 
+    text-align: left;
+    font-weight: 500;
+
+}
+.vsi-fe1-text-content a{
+    text-align: left;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    color: #f26f31;
+    font-weight: 500;
+    text-decoration: none;
+}
+.vsi-fe1-json{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.vsi-fe1-mr-top{
+    margin-top: 100px;
+    padding: 0;
+}
