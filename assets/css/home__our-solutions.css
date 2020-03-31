@@ -44,7 +44,7 @@
     width: 620px;
     height: 540px;
     position: absolute;
-    top: -130px;
+    top: -180px;
     left: 220px;
 }
 .vsi-fe3-dashboard__banner--mobile {
@@ -73,9 +73,9 @@
     width: 320px;
     height: 50px;
     background-color: var(--primary--green);
-    transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-3.8deg) ;
     position: absolute;
-    top:0;
+    top:-9px;
     left: 0;
 }
 
