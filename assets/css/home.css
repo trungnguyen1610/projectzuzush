@@ -1271,4 +1271,9 @@ lottie-player{
    }
 
 }
+.vsi-fe3-my-footer {
+    position: relative;
+    top: -130px;
+    z-index: 99;
+}
 /* CSS solution - end*/
