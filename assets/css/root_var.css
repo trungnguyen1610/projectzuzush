@@ -7,6 +7,7 @@
 
 	/* VSI-FE2- start */
     --light-gray:#f7f9fc;
+    --brown:#4d4d58;
 	/* VSI-FE2- end */
 	
 	/* VSI-FE3- start */
@@ -32,9 +33,8 @@
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #0f1b03;
-	
+    --silver:#858383;
+    --primary--green:#69a583;
+    --second--green:#a0d9b9;
 	/* VSI-FE3- end */
 }
-
-/* Font */
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap&subset=vietnamese');
