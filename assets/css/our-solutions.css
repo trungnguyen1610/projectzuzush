@@ -1,0 +1,247 @@
+/* CSS heder - start */
+/* Start Header */
+
+.vsi-fe3-my-header {
+    padding: 30px 0;
+}
+.my-logo {
+    width: 65px;
+    height: auto;
+}
+/* Navbar PC */
+
+.vsi-fe3-my-navbar ul li a {
+    margin-left: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+}
+.vsi-fe3-my-navbar ul li a:hover {
+    color: var(--orager);
+}
+
+/* @media (max-width: 576.98px) { 
+    .vsi-fe3-my-navbar ul li a{
+        margin-left: 0px;
+        
+       }
+   
+
+ } */
+
+.vsi-fe3-my-navbarNav {
+    text-align: right;
+    margin-left: 320px;
+}
+
+.vsi-fe3-my-navbarNav ul {
+    align-items: center;
+}
+.vsi-fe3-li {
+    padding: 0 20px;
+}
+.vsi-fe3-test {
+    background-color: var(--black);
+}
+.vsi-fe3-link {
+    width: 50px;
+}
+.vsi-fe3-link img {
+    margin: 15px 15px;
+}
+
+.vsi-fe3-my-navbar-mobile {
+    display: none;
+}
+/* End Navbar PC */
+
+/* Navbar Mobile */
+
+@media (max-width: 576.98px) {
+    .vsi-fe3-my-navbar {
+        display: none;
+    }
+
+    .vsi-fe3-my-navbar-mobile {
+        display: block;
+        margin-right: 100px;
+    }
+
+    .vsi-fe3-my-navbar-mobile ul {
+        margin-left: 0px;
+        display: inline-block;
+    }
+    .vsi-fe3-my-navbar-mobile ul li {
+        text-align: left;
+    }
+
+    .vsi-fe3-my-navbar-mobile ul li a {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--black);
+    }
+    .vsi-fe3-my-navbar-mobile ul li a:hover {
+        color: var(--orager);
+    }
+    .vsi-fe3-my-navbarNav-mobile ul {
+        align-items: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .vsi-fe3-my-navbar {
+        display: none;
+    }
+
+    .vsi-fe3-my-navbar-mobile {
+        display: block;
+        margin-right: 100px;
+    }
+
+    .vsi-fe3-my-navbar-mobile ul {
+        margin-left: 0px;
+        display: inline-block;
+    }
+    .vsi-fe3-my-navbar-mobile ul li {
+        text-align: left;
+    }
+
+    .vsi-fe3-my-navbar-mobile ul li a {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--black);
+    }
+    .vsi-fe3-my-navbar-mobile ul li a:hover {
+        color: var(--orager);
+    }
+    .vsi-fe3-my-navbarNav-mobile ul {
+        align-items: center;
+    }
+}
+
+/* End Navbar Mobile */
+
+.vsi-fe3__header--animation {
+    animation-name: test;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes test {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -40px;
+    }
+}
+
+/* End Header */
+/* CSS heder - end */
+
+/* CSS footer - start */
+.vsi-fe3-my-footer__banner {
+    box-shadow: 2px 2px 20px 5px #f5f5f5;
+}
+.vsi-fe3-footer__banner--item {
+    align-self: center;
+    text-align: right;
+}
+.vsi-fe3-my-footer__banner--btn {
+    background-color: var(--black);
+    border-color: var(--black);
+    padding: 15px 20px;
+}
+.vsi-fe3-my-footer__banner--btn:hover {
+    color: var(--silver);
+    background-color: var(--black);
+    border-color: var(--black);
+}
+
+.vsi-fe3-footer__banner--item h2 {
+    font-size: 40px;
+    color: #000000;
+    text-align: left;
+}
+.vsi-fe3-footer__banner--item p {
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+}
+.vsi-fe3-footer__banner--item-content {
+    margin-left: 40px;
+}
+
+@media (max-width: 767.98px) {
+    .vsi-fe3-footer__banner--item-content {
+        margin-left: 0;
+    }
+    .vsi-fe3-my-footer__banner {
+        padding: 40px 30px;
+    }
+
+    .vsi-fe3-footer__banner--item {
+        text-align: left;
+    }
+
+    .vsi-fe3-footer__banner--img {
+        display: none;
+    }
+    .vsi-fe3-my-footer__bottom .item-right a {
+        text-align: left;
+        display: block;
+    }
+}
+
+.vsi-fe3-my-footer__content--item-link {
+    text-decoration: none;
+    color: #cacaca;
+}
+
+.vsi-fe3-my-footer__content--item-link:hover {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.vsi-fe3-my-footer__content--item--list ul {
+    list-style-type: none;
+    font-size: 14px;
+}
+.vsi-fe3-my-footer__content--item--list p {
+    color: #cacaca;
+}
+.vsi-fe3-my-footer__content--item--list ul li p {
+    color: #cacaca;
+}
+.vsi-fe3-my-footer__content--item--list ul li a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.vsi-fe3-my-footer__bottom--item p,
+.vsi-fe3-my-footer__bottom--item a {
+    color: #cacaca;
+}
+.vsi-fe3-my-footer__bottom--item a {
+    text-decoration: none;
+}
+.vsi-fe3-my-footer__bottom {
+    border-top: 1px solid #cacaca;
+    padding-top: 20px;
+}
+
+/* CSS footer - end */
+/* our-solutions start */
+.vsi-fe2-our-solutions__banner {
+    margin: 0 auto;
+    text-align: center;
+}
+.vsi-fe2-our-solutions__banner {
+}
+.vsi-fe2-our-solutions-wrap {
+    background-color: var(--light-gray);
+    padding: 100px 0 203px;
+}
