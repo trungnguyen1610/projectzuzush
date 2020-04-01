@@ -336,10 +336,10 @@
     z-index: 9;
     max-width: 555px;
     position: absolute;
-    top: calc(30% - 20px);
-    left: 30px;
+    top: calc(20% - 20px);
+    left: 25px;
     -webkit-transform: translateY(50%);
-    transform: translateY(30%);
+    transform: translateY(20%);
 }
 .vsi-fe1-banner .vsi-fe1-text h1{
     color: var(--white);
@@ -361,8 +361,9 @@
     color: var(--white);
     margin-bottom: 25px;
     padding: 0;
+    font-size: 18px;
+    text-align: left;
     color: var(--white);
-
 }
 
 .vsi-fe1-banner .vsi-fe1-btn{
@@ -382,18 +383,16 @@
     
 }   
 .vsi-fe1-banner .vsi-fe1-clip-path{
-    position: absolute;
-    background-color: var(--white);
+    background-color: var(--light-gray);
     height: 200px;
     left: 0px;
     right: 0;
     width: 101%;
-    padding: 110px 0 150px;
+    padding: 110px 0 90px;
     background-size: cover;
     position: relative;
     margin-top: -122px;
     z-index: 9;
-    margin-bottom: 64px;
     -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
     clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
     transform: rotate(358deg);
@@ -429,6 +428,11 @@
         padding: 0px  20px !important;
         transform: translateY(8%);
     }
+    .vsi-fe1-banner .vsi-fe1-clip-path{
+        transform: rotate(360deg) !important;
+        padding-bottom: 78px !important;
+        height: 0px !important;
+    }
 
 }
 
@@ -458,6 +462,11 @@
         padding: 0px  20px !important;
         transform: translateY(8%);
     }
+    .vsi-fe1-banner .vsi-fe1-clip-path{
+        transform: rotate(360deg) !important;
+        padding-bottom: 78px !important;
+        height: 0px !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -478,10 +487,9 @@
     clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
     width: 100%;
     max-width: 100%;
-    padding: 203px 0 245px;
+    padding: 203px 0 130px;
     margin-top: -122px;
     margin-bottom: 64px;
-     
 }
 .vsi-fe2-ourVision-cover{
 transition: .7s all ease-out;
@@ -493,10 +501,11 @@ height: 100%;
 }
 .vsi-fe2-ourVision-wrap .vsi-fe2-ourVision-wrap-image{
     position: absolute;
-    top: calc(50% + 114px);
+    top: calc(41% + 114px);
     left: 0;
     display: block;
     transform: translateY(calc(-50% - 70px));
+    /* z-index: 999; */
 }
 .vsi-fe2-ourVision-wrap-image img{
     max-width: 100%;
@@ -536,11 +545,17 @@ bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
+.text-center {
+    text-align: center!important;
+    position: relative;
+    top: -137px;
+}
 /*Bar orange and brown */
 .img-rec {
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 40px;
+    /* bottom: 0; */
   }
   .rec.orange {
     background-color: var(--orange);
@@ -591,10 +606,7 @@ bottom: 0;
     margin-left: auto;
   }
   .vsi-fe2-ourVision-wrap{
-    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 90%);
-    
-
-     
+    /* clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 90%); */
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -622,15 +634,24 @@ bottom: 0;
     width: 50% !important;
     height: 50%  !important;
    }
-   .img-rec{
-       right: 0;
-       bottom: 80px;
-   }
+   .img-rec {
+        right: 0px;
+        bottom: 35px;
+        transform: rotate(0deg);
+    }
    .eye-image{
        width: 40% !important;
        height: 40% !important;
        max-width: 40% !important;
    }
+   .text-center{
+        top: -109px !important;
+   }
+   .rec-animate {
+        transform: skewY(-5deg) scaleX(1);
+    }
+
+
  }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -651,8 +672,9 @@ bottom: 0;
         font-weight: bold;
     }
     .img-rec {
-        right: 0;
-        bottom: 90px;
+        right: 0px;
+        bottom: 35px;
+        transform: rotate(0deg);
     }
        .eye-image{
         width: 40% !important;
@@ -662,6 +684,12 @@ bottom: 0;
     .rec-animate {
         transform: skewY(-2deg) scaleX(1);
       }
+      .text-center{
+        top: -109px !important;
+       }
+       .rec-animate {
+            transform: skewY(-5deg) scaleX(1);
+        }
  }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -872,38 +900,33 @@ lottie-player{
     font-weight: normal;
 
 }
-.vsi-fe1-text-content a{
+.vsi-fe1-text-content .vsi-fe1-hover{
     text-align: left;
     font-size: 16px;
     padding: 0;
+    position: absolute;
     margin: 0;
-    display: block;
     color: #f26f31;
     font-weight: 500;
     text-decoration: none;
+    transition: all 0.5s linear;
 }
 
-.vsi-fe1-text-content a:hover{
-    position: absolute;
-    margin: 0;
-    padding-left: 0;
-    font-size: 16px;
-
-
-}
-.vsi-fe1-text-content a:hover .fa-arrow-right{
-    transition: 0.3s all linear;
-    font-size: 16px;
+.vsi-fe1-text-content .vsi-fe1-hover:hover svg:not(:root).svg-inline--fa{
+    font-size: 10px;
     position: absolute;
     right: -20px;
+    bottom: 6px;
+    transition: all 0.5s linear;
+    
 }
-.fa-arrow-right{
+svg:not(:root).svg-inline--fa {
     overflow: visible;
-    vertical-align: middle !important;
     position: absolute;
-    font-size: 16px;
-    padding-left: 0px;
-    width: .875em;
+    bottom: 6px;
+    margin-left: 5px;
+    font-size: 10px;
+    
 }
 .vsi-fe1-json{
     width: 100%;
@@ -940,11 +963,29 @@ lottie-player{
     .vsi-fe1-show{
         display: none !important;
     }
+    .vsi-fe1-difference .vsi-fe1-human a::before{
+        opacity: 0 !important;
+    }
+    .vsi-fe1-opacity{
+        opacity: 0 !important;
+    }
+    .vsi-fe1-opacity{
+        opacity: 0 !important;
+    }
  }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .vsi-fe1-show{
         display: none !important;
+    }
+    .vsi-fe1-difference .vsi-fe1-human a::before{
+        opacity: 0 !important;
+    }
+    .vsi-fe1-opacity{
+        opacity: 0 !important;
+    }
+    .vsi-fe1-opacity{
+        opacity: 0 !important;
     }
  }
 
