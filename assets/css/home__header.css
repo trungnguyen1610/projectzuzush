@@ -1,9 +1,3 @@
-
-
-
-
-/* Start Header */
-
 .vsi-fe3-my-header{
     padding: 30px 0;
 }
@@ -11,8 +5,8 @@
     width: 65px;
     height: auto;
 }
-/* Navbar PC */
 
+/* Navbar PC - start */
 .vsi-fe3-my-navbar ul li a{
     margin-left: 35px;
     font-size: 14px;
@@ -24,23 +18,11 @@
 .vsi-fe3-my-navbar ul li a:hover{
     color: var(--orager);
 }
-
-
-/* @media (max-width: 576.98px) { 
-    .vsi-fe3-my-navbar ul li a{
-        margin-left: 0px;
-        
-       }
-   
-
- } */
-
 .vsi-fe3-my-navbarNav{
     text-align: right;
     margin-left: 320px;
     
 }
-
 .vsi-fe3-my-navbarNav ul{
     align-items: center;
 }
@@ -50,52 +32,50 @@
 }
 .vsi-fe3-test{
     background-color: var(--black);
-    
-
 }
 .vsi-fe3-link{
-   width: 50px;
+	width: 50px;
 } 
 .vsi-fe3-link img{
-  margin: 15px 15px;
+	margin: 15px 15px;
 }
 
 .vsi-fe3-my-navbar-mobile{
     display: none;
 }
-/* End Navbar PC */
+/* Navbar PC - end */
 
-
+.vsi-fe3__header--animation {
+    animation-name: test;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+@keyframes test {
+    0%   { margin-top: 0px;}
+    100% { margin-top: -40px;}
+}
 
 /* Navbar Mobile */
-
-
 @media (max-width: 576.98px) { 
     .vsi-fe3-my-navbar{
         display: none;
     }
-
     .vsi-fe3-my-navbar-mobile{
         display: block;
          margin-right: 100px;
     }
-
     .vsi-fe3-my-navbar-mobile ul {
         margin-left: 0px;
         display: inline-block;
-       
     }
     .vsi-fe3-my-navbar-mobile ul li {
-        
         text-align: left;
     }
-
     .vsi-fe3-my-navbar-mobile ul li a{
-        
         font-size: 20px;
         font-weight: 600;
         color: var(--black);
-    
     }
     .vsi-fe3-my-navbar-mobile ul li a:hover{
         color: var(--orager);
@@ -103,32 +83,26 @@
     .vsi-fe3-my-navbarNav-mobile ul{
         align-items: center;
     }
-    
-
  }
 
  @media (max-width: 991.98px) {
     .vsi-fe3-my-navbar{
         display: none;
     }
-
     .vsi-fe3-my-navbar-mobile{
         display: block;
          margin-right: 100px;
     }
-
     .vsi-fe3-my-navbar-mobile ul {
         margin-left: 0px;
         display: inline-block;
        
     }
     .vsi-fe3-my-navbar-mobile ul li {
-        
         text-align: left;
     }
 
     .vsi-fe3-my-navbar-mobile ul li a{
-        
         font-size: 20px;
         font-weight: 600;
         color: var(--black);
@@ -140,38 +114,6 @@
     .vsi-fe3-my-navbarNav-mobile ul{
         align-items: center;
     }
-
  }
 
 /* End Navbar Mobile */
-
-
-
-.vsi-fe3__header--animation {
-
-
-    animation-name: test;
-    animation-duration: 0.5s;
-    
-    animation-iteration-count: 1;
-    animation-fill-mode:forwards;
-}
-
-
-
-
-@keyframes test {
-    0%   { margin-top: 0px;}
-    
-
-    100% { margin-top: -40px;}
-
-    
-}
-
-
-
-
-
-
-/* End Header */

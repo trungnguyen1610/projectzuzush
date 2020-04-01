@@ -1,0 +1,211 @@
+.vsi-fe2-ourVision{
+    position: relative;
+}
+.vsi-fe2-ourVision-wrap{
+    background-color: var(--light-gray);
+    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+    width: 100%;
+    max-width: 100%;
+    padding: 203px 0 245px;
+    margin-top: -122px;
+    margin-bottom: 64px;
+     
+}
+.vsi-fe2-ourVision-cover{
+transition: .7s all ease-out;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.vsi-fe2-ourVision-wrap .vsi-fe2-ourVision-wrap-image{
+    position: absolute;
+    top: calc(50% + 114px);
+    left: 0;
+    display: block;
+    transform: translateY(calc(-50% - 70px));
+}
+.vsi-fe2-ourVision-wrap-image img{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+.eye-icon{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vsi-fe2-ourVision__title{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: #161616;
+    font-family: nb;
+    padding-bottom: 18px;
+    position: relative;
+    margin-bottom: 23px;
+}
+.vsi-fe2-ourVision-right-box h3{
+    max-width: 475px;
+}
+.vsi-fe2-ourVision__title.line::before{
+    position: absolute;
+bottom: 0;
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: #000000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*Bar orange and brown */
+.img-rec {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+  }
+  .rec.orange {
+    background-color: var(--orange);
+    width: 0px;
+    animation-name: example;
+    animation-duration: 1s;
+  
+  }
+  .run1{
+    width: 162px !important;
+  }
+  @keyframes example {
+    from {
+      width: 0;
+      
+     
+    }
+    to {
+      
+      width: 162px;
+    }
+  }
+  .rec.brown {
+    background-color: var(--brown);
+    width: 0px;
+    animation-name: example1;
+    animation-duration: 1s;
+  }
+  .run2{
+    width: 320px !important;
+  }
+  @keyframes example1 {
+    from {
+      width: 0;
+      
+     
+    } 
+    to {
+      
+      width: 320px;
+    }
+  }
+  .rec-animate {
+    transform: skewY(-5deg) scaleX(1);
+  }
+  .rec {
+    height: 50px;
+    margin-left: auto;
+  }
+  .vsi-fe2-ourVision-wrap{
+    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 90%);
+    
+
+     
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+@media (max-width: 575.98px) { 
+    .vsi-fe2-ourVision-wrap-image img{
+        display: none;
+    }
+    .run1{
+        width: 50px !important;
+        height: 40px;
+    }
+    .run2{
+        width: 160px !important;
+        height: 40px;
+    }
+    .vsi-fe2-ourVision__title h3{
+        width: 40%;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    .lottie-icon svg{
+    width: 50% !important;
+    height: 50%  !important;
+   }
+   .img-rec{
+       right: 0;
+       bottom: 80px;
+   }
+   .eye-image{
+       width: 40% !important;
+       height: 40% !important;
+       max-width: 40% !important;
+   }
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .vsi-fe2-ourVision-wrap-image img{
+        display: none;
+    }
+    .run1{
+        width: 50px !important;
+        height: 50px;
+    }
+    .run2{
+        width: 160px !important;
+        height: 50px;
+    }
+    .vsi-fe2-ourVision-right-box h3{
+        width: 60%;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    .img-rec {
+        right: 0;
+        bottom: 90px;
+    }
+       .eye-image{
+        width: 40% !important;
+        height: 40% !important;
+        max-width: 40% !important;
+    }
+    .rec-animate {
+        transform: skewY(-2deg) scaleX(1);
+      }
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .vsi-fe2-ourVision-wrap-image img{
+        width: 70%;
+        height: auto;
+    }
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .vsi-fe2-ourVision-wrap-image img{
+        width: 80%;
+        height: auto;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    
+ }

@@ -1,5 +1,7 @@
 .vsi-fe3-our-solutions{
     background-color: var(--light-gray);
+    clip-path: polygon(100% 0, 0 15% ,0 100%, 100% 100%);
+    padding: 150px 0;
     
 }
 .vsi-fe3-our-solutions__left-title{
@@ -62,10 +64,162 @@
     /* max-width: 100%; */
     max-height: 100%;
     text-align: center;
-    
-  
 }
+
+
+
 
 .vsi-fe3-our-solutions__content-right--case{
     display: inline-block;
 }
+
+
+
+
+.vsi-fe3-our-solutions__left{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+  
+}
+
+.vsi-fe3-our-solutions__left .vsi-fe3-our-solutions__left-1{
+    width: 120px;
+    height: 50px;
+    background-color: var(--brown);
+    transform: skewY(-3.8deg) ;
+    position: absolute;
+    top:-100px;
+    left: 0;
+}
+
+@keyframes animation-left-1 {
+    from {
+      width: 0;
+    } 
+    to {
+      width: 120px;
+    }
+  }
+
+  .vsi-fe3-our-solutions__left-1{
+    animation-name: animation-left-1;
+    animation-duration: 1s;
+  }
+.vsi-fe3-our-solutions__left  .vsi-fe3-our-solutions__left-2{
+    width: 70px;
+    height: 50px;
+    background-color: var(--light-orange);
+    transform: skewY(-4deg) skewX(-4deg) ;
+    position: absolute;
+    top:-49px;
+    left: 0;
+}
+@keyframes animation-left-2 {
+    from {
+      width: 0;
+    } 
+    to {
+      width: 70px;
+    }
+  }
+
+  .vsi-fe3-our-solutions__left-2{
+    animation-name: animation-left-2;
+    animation-duration: 1s;
+  }
+
+
+
+.vsi-fe3-our-solutions__right{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+  
+}
+
+.vsi-fe3-our-solutions__right .vsi-fe3-our-solutions__right-1{
+    width: 85px;
+    height: 50px;
+    background-color:  var(--light-orange);
+    transform: skewY(-3.8deg) ;
+    position: absolute;
+    top:-250px;
+    right: 0px;
+}
+
+.vsi-fe3-our-solutions__right  .vsi-fe3-our-solutions__right-2{
+    width: 220px;
+    height: 50px;
+    background-color:transparent;
+    transform: skewY(-3.8deg) ;
+    position: absolute;
+    top:-196px;
+    right: 0px;
+    border: 1px solid #adaddb;
+}
+
+
+@keyframes animation-right-1 {
+    from {
+      width: 0;
+    } 
+    to {
+      width: 85px;
+    }
+  }
+
+  .vsi-fe3-our-solutions__right-1{
+    animation-name: animation-right-1;
+    animation-duration: 1s;
+  }
+
+  @keyframes animation-right-2 {
+    from {
+      width: 0;
+    } 
+    to {
+      width: 220px;
+    }
+  }
+
+  .vsi-fe3-our-solutions__right-2{
+    animation-name: animation-right-2;
+    animation-duration: 1s;
+  }
+
+  .vsi-fe3-our-solutions__content-right-mobile{
+      display: none;
+  }
+
+
+
+
+  @media (max-width: 767.98px) {
+    .vsi-fe3-our-solutions__content-right{
+        display: none;
+    }  
+    .vsi-fe3-our-solutions__content-right-mobile{
+        display: block;
+    }
+    .vsi-fe3-our-solutions{
+        background-color: var(--light-gray);
+        clip-path: polygon(100% 0, 0 0, 0 98%, 100% 100%);
+        padding: 150px 0;
+        
+    }
+    .vsi-fe3-our-solutions{
+        position: relative;
+    }
+   .vsi-fe3-our-solutions__left{
+       top: 20%;
+       left: 0%;
+   }
+   .vsi-fe3-our-solutions__right{
+        bottom: 0%;
+        right:  0%;
+   }
+
+
+}
+  
