@@ -14,25 +14,21 @@ $("#vsi-fe3-btn-menu").click(function () {
     $(".vsi-fe3-my-navbarNav-mobile").addClass("vsi-fe3-animation-menu-mobile ");
 });
 
-$("#vsi-fe3-btn-menu").click(function () {
-    // $(".vsi-fe3-my-navbar-mobile-hide").addClass("vsi-fe3-my-navbar-mobile-show");
-    $( ".vsi-fe3-my-navbar-mobile-hide" ).each(function( i, e ) {
-        $(e).removeClass("vsi-fe3-my-navbar-mobile-show").hasClass("vsi-fe3-my-navbar-mobile-show");
-         $(e).addClass("vsi-fe3-my-navbar-mobile-show");
-       
-    });
-
-
-
+$("#vsi-fe3-btn-menu").click(function () {     
+    if ( !$(".vsi-fe3-my-navbar-mobile-hide").hasClass("vsi-fe3-my-navbar-mobile-show")) {
+        $(".vsi-fe3-my-navbar-mobile-hide").addClass("vsi-fe3-my-navbar-mobile-show");
+    } 
+    else if ($(".vsi-fe3-my-navbar-mobile-hide").hasClass("vsi-fe3-my-navbar-mobile-show")) {
+        $(".vsi-fe3-my-navbar-mobile-hide").removeClass("vsi-fe3-my-navbar-mobile-show");
+    }
 });
 
-
-// $(this).click(function () {
-//     $(".vsi-fe3-my-navbar-mobile-hide").removeClass("vsi-fe3-my-navbar-mobile-show").hasClass("vsi-fe3-my-navbar-mobile-show");
-
-// });
-
-
-
-
+$("#vsi-fe3-btn-menu").click(function () {     
+    if ( !$(".vsi-fe3-my-navbarNav-footer-mobile-hide").hasClass("vsi-fe3-my-navbarNav-footer-mobile-show")) {
+        $(".vsi-fe3-my-navbarNav-footer-mobile-hide").addClass("vsi-fe3-my-navbarNav-footer-mobile-show");
+    } 
+    else if ($(".vsi-fe3-my-navbarNav-footer-mobile-hide").hasClass("vsi-fe3-my-navbarNav-footer-mobile-show")) {
+        $(".vsi-fe3-my-navbarNav-footer-mobile-hide").removeClass("vsi-fe3-my-navbarNav-footer-mobile-show");
+    }
+});
 
