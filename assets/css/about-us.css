@@ -1,0 +1,31 @@
+.vsi-fe1-banner{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 100px 0 295px;
+    margin: 0;
+    background-image: url(../images/about-us/desktop-masthead-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.vsi-fe1-text-banner{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.vsi-fe1-text-banner .csi-fe1-text-big{
+    line-height: 1.25;
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--black);
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 300;
+}
