@@ -26,6 +26,534 @@
     text-align: center;
     color: var(--black);
     font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 300;
+    font-weight: bold;
 }
+.vsi-fe1-text-smail{
+    max-width: 300px;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.vsi-fe1-number{
+    text-align: right;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.vsi-fe1-number .vsi-fe1-number-year{
+    font-size: 40px;
+    font-family: 'Nunito Sans';
+    padding: 0;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    
+}
+.vsi-fe1-number .vsi-fe1-number-info{
+    line-height: 27px;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-family: 'Nunito Sans';
+    font-weight: normal;
+    color: var(--black);
+    text-align: center;
+}
+.vsi-fe1-count{
+    text-align: left;
+    line-height: 20px;
+    margin: 0 auto;
+
+}
+.vsi-fe1-flex{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.vsi-fe1-count .vsi-fe1-count-number{
+    font-size: 40px;
+    font-family: 'Nunito Sans';
+    padding: 0;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+.vsi-fe1-count .vsi-fe1-count-info{
+    line-height: 27px;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-family: 'Nunito Sans';
+    font-weight: normal;
+    color: var(--black);
+}
+.vsi-fe1-clip-path{
+    background-color: var(--white);
+    height: 200px;
+    left: 0px;
+    right: 0;
+    width: 100%;
+    padding: 110px 0 90px;
+    background-size: cover;
+    position: relative;
+    margin-top: -155px;
+    z-index: 9;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 100%);
+    transform: rotate(540deg);
+    overflow: hidden;
+}
+
+/* CSS rec start*/
+.vsi-fe1-rec-left{
+    position: absolute;
+    left: 0;
+    bottom: -42px;
+    z-index: 9;
+
+}
+.vsi-fe1-rec-grey-left{
+    -webkit-transform: skewY(-6.2deg) scaleX(1);
+    transform: skewY(-6.2deg) scaleX(1);
+    width: 135px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    bottom: -2px;
+    background-color: #e7ebf1;
+    position: absolute;
+    -webkit-animation-name: chart-grey; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	animation-name: chart-grey;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes chart-grey {
+    from {width: 0px;}
+    to {width:135px;}
+}
+/* Standard syntax */
+@keyframes chart-grey {
+    from {width: 0px;}
+   to {width:135px;}
+}
+.vsi-fe1-rec-orange-left{
+    position: relative;
+    left: 0;
+    bottom: -40px;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    -webkit-transform: skewY(-6.2deg) scaleX(1);
+    transform: skewY(-6.2deg) scaleX(1);
+    background-color: #ffbd9d;
+    width: 352px;
+    -webkit-animation-name: chart-orange; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	animation-name: chart-orange;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes chart-orange {
+    from {width: 0px;}
+    to {width:352px;}
+}
+/* Standard syntax */
+@keyframes chart-orange {
+    from {width: 0px;}
+   to {width:352px;}
+}
+.vsi-fe1-rec-orange-left::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 217px;
+    background-color: #ff965c;
+    height: 100%;
+    -webkit-animation-name: chart-grey-right; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	animation-name: chart-grey-right;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes chart-grey-right {
+    from {width: 0px;}
+    to {width:217px;}
+}
+/* Standard syntax */
+@keyframes chart-grey-right {
+    from {width: 0px;}
+   to {width:217px;}
+}
+.vsi-fe1-rec-right{
+    right: 0;
+    position: absolute;
+    bottom: 50px;
+    z-index: 9;
+}
+
+.vsi-fe1-rec-gray-right{
+    -webkit-transform: skewY(-6.2deg) scaleX(1);
+    transform: skewY(-6.2deg) scaleX(1);
+    width: 159px;
+    height: 50px;
+    background-color: #e7ebf1;
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    -webkit-animation-name: chart-grey-right; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	animation-name: chart-grey-right;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes chart-grey-right {
+    from {width: 0px;}
+    to {width:159px;}
+}
+/* Standard syntax */
+@keyframes chart-grey-right {
+    from {width: 0px;}
+   to {width:159px;}
+}
+.vsi-fe1-orange-border-right{
+    border: 1px solid #ffbd9d;
+    background-color: transparent;
+    -webkit-transform: skewY(-6.2deg) scaleX(1);
+    transform: skewY(-6.2deg) scaleX(1);
+    width: 330px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    right: 0px;
+    bottom: -24px;
+    position: absolute;
+    -webkit-animation-name: chart-orange-border-right; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	animation-name: chart-orange-border-right;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes chart-orange-border-right {
+    from {width: 0px;}
+    to {width:330px;}
+}
+/* Standard syntax */
+@keyframes chart-orange-border-right {
+    from {width: 0px;}
+   to {width:330px;}
+}
+.vsi-fe1-orange-light-right{
+    -webkit-transform: skewY(-6.2deg) scaleX(1);
+    transform: skewY(-6.2deg) scaleX(1);
+    height: 50px;
+    width: 86px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    background-color: #ffbd9d;
+    -webkit-animation-name: chart-orange-right; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	animation-name: chart-orange-right;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes chart-orange-right {
+    from {width: 0px;}
+    to {width:86px;}
+}
+/* Standard syntax */
+@keyframes chart-orange-right {
+    from {width: 0px;}
+   to {width:86px;}
+}
+/* CSS rec end*/
+.vsi-fe1-title{
+    text-align: center;
+    margin-bottom: 54px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: var(--black);
+    font-weight: bold;
+    padding-bottom: 18px;
+}
+.vsi-fe1-title::before{
+    position: absolute;
+    bottom: 87%;
+    content: '';
+    height: 1px;
+    width: 40px;
+    background-color: var(--black);
+    left: 50%;
+    font-weight: bold;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.vsi-fe1-content-text{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.vsi-fe1-content-text p{
+    text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.44;
+    color: #161616;
+}
+.vsi-fe1-hover-box{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.rectangle-item{
+    width: 24%;
+    padding-right: 15px;
+    margin-right: 20px;
+
+
+}
+.vsi-fe1-icon{
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    text-align: center;
+    height: 280px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+.vsi-fe1-pad{
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    text-align: center;
+    height: 280px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+@media (max-width: 575.98px) { 
+    .vsi-fe1-text-banner .csi-fe1-text-big{
+        line-height: 1.25;
+        font-size: 32px;
+    }
+    .vsi-fe1-number .vsi-fe1-number-info{
+        font-size: 16px;
+    }
+    .vsi-fe1-count .vsi-fe1-count-number{
+        font-size: 24px;
+    }
+    .vsi-fe1-number .vsi-fe1-number-year{
+        font-size: 24px;
+    }
+    .vsi-fe1-clip-path{
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 70%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 70%);
+    }
+    .vsi-fe1-rec-grey-left {
+        display: none;
+    }
+    .vsi-fe1-rec-orange-left {
+        bottom: -140px;
+        -webkit-transform: skewY(-4.2deg) scaleX(1);
+        transform: skewY(-6.2deg) scaleX(1);
+        width: 207px;
+        -webkit-animation-name: chart-orange; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: chart-orange;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes chart-orange {
+        from {width: 0px;}
+        to {width:207px;}
+    }
+    /* Standard syntax */
+    @keyframes chart-orange {
+        from {width: 0px;}
+        to {width:207px;}
+    }
+    .vsi-fe1-rec-orange-left::before{
+        width: 109px;
+        -webkit-animation-name: chart-grey-right; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: chart-grey-right;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes chart-grey-right {
+        from {width: 0px;}
+        to {width:109px;}
+    }
+    /* Standard syntax */
+    @keyframes chart-grey-right {
+        from {width: 0px;}
+        to {width:109px;}
+    }
+    .vsi-fe1-rec-gray-right {
+        display: none;
+    }
+    .vsi-fe1-orange-light-right {
+        display: none;
+    }
+    .vsi-fe1-orange-border-right {
+        -webkit-transform: skewY(-1.5deg) scaleX(1);
+        transform: skewY(-6.5deg) scaleX(1);
+        width: 13px;
+        -webkit-animation-name: chart-orange-border-right; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: chart-orange-border-right;
+        animation-duration: 1s;
+        bottom: -206px;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes chart-orange-border-right {
+        from {width: 0px;}
+        to {width:43px;}
+    }
+    /* Standard syntax */
+    @keyframes chart-orange-border-right {
+        from {width: 0px;}
+        to {width:43px;}
+    }
+    
+   
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .vsi-fe1-text-banner .csi-fe1-text-big{
+        line-height: 1.25;
+        font-size: 32px;
+    }
+    .vsi-fe1-number .vsi-fe1-number-info{
+        font-size: 16px;
+    }
+    .vsi-fe1-count .vsi-fe1-count-number{
+        font-size: 24px;
+    }
+    .vsi-fe1-number .vsi-fe1-number-year{
+        font-size: 24px;
+    }
+    .vsi-fe1-clip-path{
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 70%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 70%);
+    }
+    .vsi-fe1-rec-grey-left {
+        display: none;
+    }
+    .vsi-fe1-rec-orange-left {
+        bottom: 101px;
+        -webkit-transform: skewY(-4.2deg) scaleX(1);
+        transform: skewY(-4.2deg) scaleX(1);
+        width: 207px;
+        -webkit-animation-name: chart-orange; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: chart-orange;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes chart-orange {
+        from {width: 0px;}
+        to {width:207px;}
+    }
+    /* Standard syntax */
+    @keyframes chart-orange {
+        from {width: 0px;}
+        to {width:207px;}
+    }
+    .vsi-fe1-rec-orange-left::before{
+        width: 109px;
+        -webkit-animation-name: chart-grey-right; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: chart-grey-right;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes chart-grey-right {
+        from {width: 0px;}
+        to {width:109px;}
+    }
+    /* Standard syntax */
+    @keyframes chart-grey-right {
+        from {width: 0px;}
+        to {width:109px;}
+    }
+    .vsi-fe1-rec-gray-right {
+        display: none;
+    }
+    .vsi-fe1-orange-light-right {
+        display: none;
+    }
+    .vsi-fe1-orange-border-right {
+        -webkit-transform: skewY(-1.5deg) scaleX(1);
+        transform: skewY(-3.5deg) scaleX(1);
+        width: 13px;
+        -webkit-animation-name: chart-orange-border-right; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: chart-orange-border-right;
+        animation-duration: 1s;
+        bottom: -6px;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes chart-orange-border-right {
+        from {width: 0px;}
+        to {width:43px;}
+    }
+    /* Standard syntax */
+    @keyframes chart-orange-border-right {
+        from {width: 0px;}
+        to {width:43px;}
+    }
+    
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+ }
+
+@media (min-width: 1200px) { 
+    
+ }  
