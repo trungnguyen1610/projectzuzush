@@ -22,3 +22,19 @@ $('.vsi-fe1-count-number').each(function() {
   
 
 });
+
+$(".vsi-fe1-show").hover(
+  function () {
+    $(this).addClass("vsi-fe1-active");
+  },
+  function () {
+    $(this).removeClass("vsi-fe1-active");
+  }
+);
+$(document).ready(function() {     
+  $(".vsi-fe1-show").hover(function() {
+      $(this).find('.vsi-fe1-text-content').addClass("vsi-fe1-active-text");    
+  }, function() {    
+      $(this).find('.vsi-fe1-text-content').removeClass("vsi-fe1-active-text");     
+  });
+});

@@ -1,6 +1,4 @@
-body{
-    font-family: 'Nunito Sans' !important;
-}
+
 .vsi-fe1-banner{
     width: 100%;
     max-width: 100%;
@@ -333,7 +331,8 @@ body{
     width: 24%;
     padding-right: 15px;
     margin-right: 20px;
-
+    -webkit-transition: .5s all ease;
+    transition: .5s all ease;
 
 }
 .vsi-fe1-icon{
@@ -385,6 +384,26 @@ body{
     font-weight: 900;
     margin-top: auto;
 }
+.vsi-fe1-active{
+    background: var(--white);
+    position: relative;
+    width: 457px;
+    height: 280px;
+    z-index: 99;
+}
+.vsi-fe1-text-content{
+    font-size: 18px;
+    padding: 0;
+    margin: 20px 0px;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Nunito Sans';
+    display: none;
+}
+.vsi-fe1-active-text{
+    display: block !important;
+}
+
 .vsi-fe1-hiring{
     width: 100%;
     max-width: 100%;
@@ -689,11 +708,10 @@ body{
     width: 100%;
     max-width: 100%;
     padding: 0;
-    /* margin: 0; */
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     margin: 0 auto;
+    cursor: pointer;
 }
 .vsi-fe1-img-world{
     padding: 0;
@@ -724,6 +742,112 @@ body{
 .vsi-fe1-mg-btn{
     margin-bottom: 50px !important;
 }
+.tooltip {
+    position: relative; 
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+
+    margin: auto;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    background: yellow;
+    display: block;
+    margin-top: 20px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.vsi-fe1-tooltip{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.vsi-fe1-tooltip-hover{
+    position: absolute;
+    top: 150%;
+    width: 300px;
+    margin-top: auto;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+    left: -50px;
+    background: var(--white);
+    transition: all 0.5s linear;
+    display: none;
+    z-index: 99;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.22);
+}
+.vsi-fe1-tooltip-hover::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    padding: 0;
+    margin: 0;
+    top: 0;
+    top: -10px;
+    left: 43%;
+    text-align: center;
+    transform: rotate(133deg);
+}
+.vsi-fe1-tooltip:hover .vsi-fe1-tooltip-hover{
+    display: block !important;
+}
+.vsi-fe1-box-tooltip{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.vsi-fe1-h3-tooltip{
+    margin: 10px 0;
+    font-family: 'Nunito Sans';
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: #161616;
+    padding-bottom: 18px;
+    position: relative;
+    font-weight: bold;
+}
+.vsi-fe1-h3-tooltip::before{
+    position: absolute;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    width: 40px;
+    background-color: #000000;
+}
+.vsi-fe1-p-tooltip{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-family: 'Nunito Sans';
+    color: var(--black);
+}
+.vsi-fe1-mbl-ipad{
+    display: none;
+}
 @media (max-width: 575.98px) { 
     .vsi-fe1-text-banner .csi-fe1-text-big{
         line-height: 1.25;
@@ -738,17 +862,21 @@ body{
     .vsi-fe1-number .vsi-fe1-number-year{
         font-size: 24px;
     }
+    .vsi-fe1-banner {
+        background-image: url(../images/about-us/desktop-masthead-about.png);
+    }
     .vsi-fe1-clip-path{
-        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 70%);
-        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 70%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     }
     .vsi-fe1-rec-grey-left {
         display: none;
     }
     .vsi-fe1-rec-orange-left {
-        bottom: -140px;
+        top: -78px;
+        bottom: 0;
         -webkit-transform: skewY(-4.2deg) scaleX(1);
-        transform: skewY(-6.2deg) scaleX(1);
+        transform: skewY(-2.2deg) scaleX(1);
         width: 207px;
         -webkit-animation-name: chart-orange; /* Safari 4.0 - 8.0 */
         -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
@@ -792,13 +920,13 @@ body{
     }
     .vsi-fe1-orange-border-right {
         -webkit-transform: skewY(-1.5deg) scaleX(1);
-        transform: skewY(-6.5deg) scaleX(1);
+        transform: skewY(-0.5deg) scaleX(1);
         width: 13px;
         -webkit-animation-name: chart-orange-border-right; /* Safari 4.0 - 8.0 */
         -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
         animation-name: chart-orange-border-right;
         animation-duration: 1s;
-        bottom: -206px;
+        bottom: -59px;
         animation-fill-mode: forwards;
     }
     /* Safari 4.0 - 8.0 */
@@ -817,7 +945,83 @@ body{
     .vsi-fe1-img-hiring{
         display: none;
     }
-   
+    .vsi-fe1-rec-countries-right {
+        display: none;
+    }
+    .vsi-fe1-countries {
+        clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
+        padding-top: 80px;
+        padding-bottom: 180px;
+    }
+    .vsi-fe1-countries-grey-left{
+        -webkit-transform: skewY(-5deg) scaleX(1);
+        transform: skewY(-5deg) scaleX(1);
+        width: 0px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        background-color: #e7ebf1;
+        -webkit-animation-name: countries-grey-left-mbl; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: countries-grey-left-mbl;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes countries-grey-left-mbl {
+        from {width: 0px;}
+        to {width:136px;}
+    }
+    /* Standard syntax */
+    @keyframes countries-grey-left-mbl {
+        from {width: 0px;}
+        to {width:136px;}
+    }
+    .vsi-fe1-countries-orager-border-left{
+        -webkit-transform: skewY(-5deg) scaleX(1);
+        transform: skewY(-5deg) scaleX(1);
+        border: 1px solid #ffbd9d;
+        background-color: transparent;
+        height: 40px;
+        width: 0px;
+        position: absolute;
+        top: 45px;
+        -webkit-animation-name: countries-orager-border-left; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: countries-orager-border-left;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes countries-orager-border-left {
+        from {width: 0px;}
+        to {width:56px;}
+    }
+    /* Standard syntax */
+    @keyframes countries-orager-border-left {
+        from {width: 0px;}
+        to {width:56px;}
+    }
+    .vsi-fe1-rec-countries-left {
+        top: 30px;
+    }
+    .vsi-fe1-countries-world.vsi-fe1-tooltip {
+        flex-direction: column;
+    }
+    .vsi-fe1-img-world img{
+        padding-left: 0px !important;
+    }
+    .vsi-fe1-text-world {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .vsi-fe1-mbl-ipad{
+        display: inline-block !important;
+    }
+    .vsi-fe1-tooltip:hover .vsi-fe1-tooltip-hover{
+        display: none !important;
+    }
+    
  }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -834,9 +1038,12 @@ body{
     .vsi-fe1-number .vsi-fe1-number-year{
         font-size: 24px;
     }
+    .vsi-fe1-banner {
+        background-image: url(../images/about-us/desktop-masthead-about.png);
+    }
     .vsi-fe1-clip-path{
-        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 70%);
-        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 70%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     }
     .vsi-fe1-rec-grey-left {
         display: none;
@@ -913,7 +1120,82 @@ body{
     .vsi-fe1-img-hiring{
         display: none;
     }   
-    
+    .vsi-fe1-rec-countries-right {
+        display: none;
+    }
+    .vsi-fe1-countries-grey-left{
+        -webkit-transform: skewY(-5deg) scaleX(1);
+        transform: skewY(-5deg) scaleX(1);
+        width: 0px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        background-color: #e7ebf1;
+        -webkit-animation-name: countries-grey-left-mbl; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: countries-grey-left-mbl;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes countries-grey-left-mbl {
+        from {width: 0px;}
+        to {width:136px;}
+    }
+    /* Standard syntax */
+    @keyframes countries-grey-left-mbl {
+        from {width: 0px;}
+        to {width:136px;}
+    }
+    .vsi-fe1-countries-orager-border-left{
+        -webkit-transform: skewY(-5deg) scaleX(1);
+        transform: skewY(-5deg) scaleX(1);
+        border: 1px solid #ffbd9d;
+        background-color: transparent;
+        height: 40px;
+        width: 0px;
+        position: absolute;
+        top: 45px;
+        -webkit-animation-name: countries-orager-border-left; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: countries-orager-border-left;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes countries-orager-border-left {
+        from {width: 0px;}
+        to {width:56px;}
+    }
+    /* Standard syntax */
+    @keyframes countries-orager-border-left {
+        from {width: 0px;}
+        to {width:56px;}
+    }
+    .vsi-fe1-countries {
+        clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
+        padding-top: 80px;
+        padding-bottom: 180px;
+    }
+    .vsi-fe1-rec-countries-left {
+        top: 21px;
+    }
+    .vsi-fe1-countries-world.vsi-fe1-tooltip {
+        flex-direction: column;
+    }
+    .vsi-fe1-img-world img{
+        padding-left: 0px !important;
+    }
+    .vsi-fe1-text-world {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .vsi-fe1-mbl-ipad{
+        display: inline-block !important;
+    }
+    .vsi-fe1-tooltip:hover .vsi-fe1-tooltip-hover{
+        display: none !important;
+    }
  }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 

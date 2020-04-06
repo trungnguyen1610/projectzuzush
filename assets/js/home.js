@@ -34,6 +34,24 @@ $("#vsi-fe3-btn-menu").click(function () {
 });
 
 
+
+ $("#vsi-fe3-btn-menu").click(function () {     
+     console.log("a");
+   if ( !$(".vsi-fe3-menu-mobile--hide").hasClass("vsi-fe3-menu-mobile--show")) {
+       $(".vsi-fe3-menu-mobile--hide").addClass("vsi-fe3-menu-mobile--show");
+   } 
+   else if ($(".vsi-fe3-menu-mobile--hide").hasClass("vsi-fe3-menu-mobile--show")) {
+       $(".vsi-fe3-menu-mobile--hide").removeClass("vsi-fe3-menu-mobile--show");
+   }
+});
+
+
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+  });
+
  // js header - end
  
  // js footer - start 
@@ -77,4 +95,5 @@ $("#vsi-fe3-btn-menu").click(function () {
         $('.vsi-fe3-animate-right-2').addClass("vsi-fe3-our-solutions__right-2");
      }
  });
+ 
  // Solution - end
