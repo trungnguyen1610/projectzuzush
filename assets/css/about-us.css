@@ -365,6 +365,176 @@
     overflow: hidden;
     transition: 0.5s all ease-in-out;
 }
+.vsi-fe1-text-icon{
+    font-size: 18px;
+    line-height: 1.44;
+    font-weight: 500;
+    color: #161616;
+    padding-top: 20px;
+    margin: 0;
+}
+.fa-chevron-down{
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900; 
+}
+.vsi-fe1-icon-down{
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    margin-top: auto;
+}
+.vsi-fe1-hiring{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 65px 0px 0px 150px;
+    margin: 0;
+    position: relative;
+    right: 0;
+}
+.vsi-fe1-img-hiring img{
+    width: 100%;
+    max-width: 100%;
+    height: 392px;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vsi-fe1-text-hiring{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 80px;
+}
+.vsi-fe1-text-hiring .vsi-fe1-title-hiring{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: #161616;
+    padding-bottom: 18px;
+    position: relative;
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+.vsi-fe1-text-hiring .vsi-fe1-title-hiring::before{
+    position: absolute;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    width: 40px;
+    background-color: #000000;
+}
+.vsi-fe1-h1-hiring{
+    font-size: 32px;
+    line-height: 40px;
+    color: #161616;
+    margin-bottom: 20px;
+    font-family: 'Nunito Sans';
+    font-weight: bold;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+.vsi-fe1-p-hiring{
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+    font-weight: normal;
+    text-align: left;
+}
+.vsi-fe1-a-hiring{
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+    font-weight: normal;
+    text-align: left;
+
+}
+.vsi-fe1-a-hiring{
+    text-align: left;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    margin: 0;
+    color: #f26f31;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5s linear;
+}
+.vsi-fe1-a-hiring:hover {
+    text-decoration: none;
+    color: #f26f31;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+.vsi-fe1-a-hiring:hover .svg-inline--fa{
+    font-size: 10px;
+    position: absolute;
+    right: -20px;
+    bottom: 6px;
+    transition: all 0.5s linear;
+    
+}
+.vsi-fe1-cipt-path{
+    -webkit-clip-path: polygon(0% 15%, 100% 3%, 100% 85%, 0% 97%);
+    clip-path: polygon(0% 15%, 100% 3%, 100% 85%, 0% 97%);
+}
+.vsi-fe1-countries{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--light-gray);
+    background-size: cover;
+    position: relative;
+    padding: 180px 0 200px;
+    text-align: center;
+
+}
+.vsi-fe1-icon{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+.vsi-fe1-h3-countries{
+    text-align: center;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Nunito Sans';
+    font-size: 32px;
+    font-weight: 700;
+}
+.vsi-fe1-h3-countries .vsi-fe1-span-countries{
+    color: #f26f31;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+
+}
+.vsi-fe1-rec-countries-left{
+    position: absolute;
+    left: 0;
+    bottom: -42px;
+    z-index: 9;
+}
+.vsi-fe1-rec-countries-right{
+    position: absolute;
+    left: 0;
+    bottom: -42px;
+    z-index: 9;
+}
+
 @media (max-width: 575.98px) { 
     .vsi-fe1-text-banner .csi-fe1-text-big{
         line-height: 1.25;
@@ -452,7 +622,12 @@
         from {width: 0px;}
         to {width:43px;}
     }
-    
+    .vsi-fe1-hiring{
+        padding-left: 0px !important;
+    }
+    .vsi-fe1-img-hiring{
+        display: none;
+    }
    
  }
 
@@ -543,6 +718,12 @@
         from {width: 0px;}
         to {width:43px;}
     }
+    .vsi-fe1-hiring{
+        padding-left: 0px !important;
+    }
+    .vsi-fe1-img-hiring{
+        display: none;
+    }   
     
  }
 
