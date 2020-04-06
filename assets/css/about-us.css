@@ -1,3 +1,6 @@
+body{
+    font-family: 'Nunito Sans' !important;
+}
 .vsi-fe1-banner{
     width: 100%;
     max-width: 100%;
@@ -117,7 +120,7 @@
 .vsi-fe1-rec-grey-left{
     -webkit-transform: skewY(-6.2deg) scaleX(1);
     transform: skewY(-6.2deg) scaleX(1);
-    width: 135px;
+    width: 0px;
     height: 50px;
     padding: 0;
     margin: 0;
@@ -151,7 +154,7 @@
     -webkit-transform: skewY(-6.2deg) scaleX(1);
     transform: skewY(-6.2deg) scaleX(1);
     background-color: #ffbd9d;
-    width: 352px;
+    width: 0px;
     -webkit-animation-name: chart-orange; /* Safari 4.0 - 8.0 */
 	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
 	animation-name: chart-orange;
@@ -173,7 +176,7 @@
     content: "";
     top: 0;
     left: 0;
-    width: 217px;
+    width: 0px;
     background-color: #ff965c;
     height: 100%;
     -webkit-animation-name: chart-grey-right; /* Safari 4.0 - 8.0 */
@@ -202,7 +205,7 @@
 .vsi-fe1-rec-gray-right{
     -webkit-transform: skewY(-6.2deg) scaleX(1);
     transform: skewY(-6.2deg) scaleX(1);
-    width: 159px;
+    width: 0px;
     height: 50px;
     background-color: #e7ebf1;
     position: absolute;
@@ -229,7 +232,7 @@
     background-color: transparent;
     -webkit-transform: skewY(-6.2deg) scaleX(1);
     transform: skewY(-6.2deg) scaleX(1);
-    width: 330px;
+    width: 0px;
     height: 50px;
     padding: 0;
     margin: 0;
@@ -256,7 +259,7 @@
     -webkit-transform: skewY(-6.2deg) scaleX(1);
     transform: skewY(-6.2deg) scaleX(1);
     height: 50px;
-    width: 86px;
+    width: 0px;
     padding: 0;
     margin: 0;
     position: absolute;
@@ -492,13 +495,14 @@
     height: auto;
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin-top: 50px;
     background-color: var(--light-gray);
     background-size: cover;
     position: relative;
     padding: 180px 0 200px;
     text-align: center;
-
+    -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
 }
 .vsi-fe1-icon{
     text-align: center;
@@ -525,16 +529,201 @@
 .vsi-fe1-rec-countries-left{
     position: absolute;
     left: 0;
-    bottom: -42px;
+    top: 117px;
     z-index: 9;
 }
 .vsi-fe1-rec-countries-right{
     position: absolute;
-    left: 0;
-    bottom: -42px;
+    right: 0;
+    top: 180px;
     z-index: 9;
 }
-
+.vsi-fe1-countries-grey-left{
+    -webkit-transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-5deg) scaleX(1);
+    width: 0px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    background-color: #e7ebf1;
+    -webkit-animation-name: countries-grey-left; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: countries-grey-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes countries-grey-left {
+    from {width: 0px;}
+    to {width:247px;}
+}
+/* Standard syntax */
+@keyframes countries-grey-left {
+    from {width: 0px;}
+    to {width:247px;}
+}
+.vsi-fe1-countries-orager-border-left{
+    -webkit-transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-5deg) scaleX(1);
+    border: 1px solid #ffbd9d;
+    background-color: transparent;
+    height: 50px;
+    width: 0px;
+    position: absolute;
+    top: 54px;
+    -webkit-animation-name: countries-orager-border-left; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: countries-orager-border-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes countries-orager-border-left {
+    from {width: 0px;}
+    to {width:135px;}
+}
+/* Standard syntax */
+@keyframes countries-orager-border-left {
+    from {width: 0px;}
+    to {width:135px;}
+}
+.vsi-fe1-countries-grey-right{
+    -webkit-transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-5deg) scaleX(1);
+    width: 0px;
+    background-color: #e7ebf1;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    height: 50px;
+    -webkit-transition: 1.5s all ease-out;
+    transition: 1.5s all ease-out;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    position: absolute;
+    -webkit-animation-name: countries-grey-right; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: countries-grey-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes countries-grey-right {
+    from {width: 0px;}
+    to {width:130px;}
+}
+/* Standard syntax */
+@keyframes countries-grey-right {
+    from {width: 0px;}
+    to {width:130px;}
+}
+.vsi-fe1-countries-orager-border-right{
+    -webkit-transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-5deg) scaleX(1);
+    width: 0px;
+    padding: 0;
+    margin: 0;
+    top: 50px;
+    right: 0;
+    height: 50px;
+    border: 1px solid #ffbd9d;
+    background-color: transparent;
+    -webkit-transition: 1.5s all ease-out;
+    transition: 1.5s all ease-out;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    margin-left: auto;
+    position: absolute;
+    -webkit-animation-name: countries-orager-border-right; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: countries-orager-border-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes countries-orager-border-right {
+    from {width: 0px;}
+    to {width:262px;}
+}
+/* Standard syntax */
+@keyframes countries-orager-border-right {
+    from {width: 0px;}
+    to {width:262px;}
+}
+.vsi-fe1-countries-orager-right{
+    -webkit-transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-5deg) scaleX(1);
+    width: 0px;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    top: 100px;
+    position: absolute;
+    height: 50px;
+    background-color: #ffbd9d;
+    -webkit-transition: 1.5s all ease-out;
+    transition: 1.5s all ease-out;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    margin-left: auto;
+    -webkit-animation-name: countries-orager-right; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: countries-orager-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes countries-orager-right {
+    from {width: 0px;}
+    to {width:91px;}
+}
+/* Standard syntax */
+@keyframes countries-orager-right {
+    from {width: 0px;}
+    to {width:91px;}
+}
+.vsi-fe1-mg-top{
+    margin-top: 80px !important;
+}
+.vsi-fe1-countries-world{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    /* margin: 0; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+.vsi-fe1-img-world{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+.vsi-fe1-img-world img{
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+.vsi-fe1-text-world{
+    font-size: 20px;
+    line-height: 1.3;
+    color: #161616;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Nunito Sans';
+}
+.vsi-fe1-mg-btn{
+    margin-bottom: 50px !important;
+}
 @media (max-width: 575.98px) { 
     .vsi-fe1-text-banner .csi-fe1-text-big{
         line-height: 1.25;
