@@ -1,0 +1,540 @@
+body {
+	max-width:100%;
+	height:auto; 
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+
+
+/* CSS heder - start */
+.vsi-fe3-my-header{
+    padding: 30px 0;
+}
+.my-logo{
+    width: 65px;
+    height: auto;
+}
+
+/* Navbar PC - start */
+.vsi-fe3-my-navbar ul li a{
+    margin-left: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+   
+
+}
+.vsi-fe3-my-navbar ul li a:hover{
+    color: var(--orager);
+}
+.vsi-fe3-my-navbarNav{
+    text-align: right;
+    margin-left: 320px;
+    
+}
+.vsi-fe3-my-navbarNav ul{
+    align-items: center;
+}
+.vsi-fe3-li {
+   padding: 0 20px;
+   
+}
+.vsi-fe3-test{
+    background-color: var(--black);
+}
+.vsi-fe3-link{
+	width: 50px;
+} 
+.vsi-fe3-link img{
+	margin: 15px 15px;
+}
+
+.vsi-fe3-my-navbar-mobile{
+    
+    display: none;
+}
+/* Navbar PC - end */
+
+.vsi-fe3__header--animation {
+    animation-name: test;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+@keyframes test {
+    0%   { margin-top: 0px;}
+    100% { margin-top: -40px;}
+}
+
+/* Navbar Mobile */
+  @keyframes test-animate-menu-mobile{
+    0%   { margin-top: 100px;}
+    100% { margin-top: 40px;}
+ } 
+.vsi-fe3-animation-menu-mobile   {
+    animation-name: test-animate-menu-mobile;
+    animation-duration: 1s;
+    transform: translateY(50px);
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+@keyframes test-animate-menu-mobile-top{
+    from{
+        left:  -500px;
+    }
+    to{
+        left: 0px;
+    }
+    
+ } 
+
+
+.vsi-fe3-my-navbar-mobile-hide{
+    top: 0;
+    color: white;
+    background-color: black ;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    padding: 30px 50px;
+}
+
+.vsi-fe3-my-navbar-mobile-show{
+    display: block;
+    animation-name: test-animate-menu-mobile-top;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+   
+}
+
+
+@media (min-width: 991.98px) {
+    #test-button {
+    display: none;
+    }
+    .vsi-fe3-logo-menu-mobile{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    #vsi-fe3-btn-menu{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 9999999999;
+        outline: none;
+        display: none;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    
+    .vsi-fe3-my-navbarNav-mobile{
+       
+        position: absolute;
+        left: 0 ;
+    }
+    .vsi-fe3-my-navbar{
+        display: none;
+    }
+    .vsi-fe3-my-navbar-mobile{
+         display: block;
+         margin-right: 100px;
+         /* position: absolute;
+         left: 0; */
+    }
+  
+    .vsi-fe3-my-navbar-mobile ul {
+        margin-left: 0px;
+        display: inline-block;
+    }
+    .vsi-fe3-my-navbar-mobile ul li {
+        text-align: left;
+    }
+    .vsi-fe3-my-navbar-mobile ul li a{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--black);
+    }
+    .vsi-fe3-my-navbar-mobile ul li a:hover{
+        color: var(--orager);
+    }
+    .vsi-fe3-my-navbarNav-mobile ul{
+        padding-left: 10px;
+        align-items: center;
+    }
+    
+    .vsi-fe3-my-navbar{
+        display: none;
+    }
+    .vsi-fe3-my-navbar-mobile{
+        display: block;
+         margin-right: 100px;
+    }
+    .vsi-fe3-my-navbar-mobile ul {
+        margin-left: 0px;
+        display: inline-block;
+       
+    }
+    .vsi-fe3-my-navbar-mobile ul li {
+        text-align: left;
+    }
+
+    .vsi-fe3-my-navbar-mobile ul li a{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--black);
+    
+    }
+    .vsi-fe3-my-navbar-mobile ul li a:hover{
+        color: var(--orager);
+    }
+    .vsi-fe3-my-navbarNav-mobile ul{
+        align-items: center;
+    }
+
+ }
+
+ .vsi-fe3-my-navbarNav-footer-mobile-lang{
+     position: absolute;
+     bottom: 0;
+     color: #8b8989;
+  
+ }
+ .vsi-fe3-my-navbarNav-footer-mobile-contact{
+    position: absolute;
+    bottom: 0;
+    color: #8b8989;
+    margin-left: 100px;
+   
+ }
+.vsi-fe3-my-navbarNav-footer-mobile-lang:hover{
+     text-decoration: none;
+     color: #8b8989;
+ }
+.vsi-fe3-my-navbarNav-footer-mobile-contact:hover{
+    text-decoration: none;
+    color: #8b8989;
+}
+
+.vsi-fe3-my-navbarNav-footer-mobile-logo{
+    position: absolute;
+     bottom: 2%;
+     right: 2%;
+}
+
+.vsi-fe3-my-navbarNav-footer-mobile-hide{
+    display: none;
+}
+.vsi-fe3-my-navbarNav-footer-mobile-show{
+    display: block;
+}
+
+
+.vsi-fe3-trigger-menu-mobile img{
+    width: 50px;
+    height: 50px;
+}
+
+.vsi-fe3-trigger-menu-mobile{
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: white;  
+}
+
+@media (max-width: 991.98px){
+    .vsi-fe3-menu-mobile{
+        position: fixed;
+         top: 0;
+         left: 0;
+         width: 100vw;
+         height: 100vh;
+         background: #FFF;
+         z-index: 999999999999;
+    }
+    .vsi-fe3-menu-mobile--hide{
+        display: none;
+        z-index: 99999999;
+    }
+    .vsi-fe3-menu-mobile--show{
+        
+        display: block;
+        z-index: 999999999999;
+    }
+    .vsi-fe3-logo-menu-mobile{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #vsi-fe3-btn-menu{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 9999999999;
+        outline: none;
+    }
+   
+}
+   
+
+/* End Navbar Mobile */
+
+
+/* CSS footer - start */
+.vsi-fe3-my-footer__banner{
+   
+    box-shadow:2px 2px 20px 5px #f5f5f5;
+  
+}
+.vsi-fe3-footer__banner--item{
+    align-self: center;
+    text-align: right;
+}
+.vsi-fe3-my-footer__banner--btn{
+    background-color: var(--black);
+    border-color: var(--black);
+    padding: 15px 20px;
+
+}
+.vsi-fe3-my-footer__banner--btn:hover{
+    color: var(--silver);
+    background-color: var(--black);
+    border-color: var(--black);
+}
+
+.vsi-fe3-footer__banner--item h2{
+    font-size: 40px;
+    color: #000000;
+    text-align: left;
+}
+.vsi-fe3-footer__banner--item p{
+    font-size: 18px;
+    color: #000000; 
+    text-align: left;
+}
+.vsi-fe3-footer__banner--item-content{
+    margin-left: 40px;
+}
+
+@media (max-width: 767.98px){
+    .vsi-fe3-footer__banner--item-content{
+       margin-left: 0;
+    } 
+    .vsi-fe3-my-footer__banner{
+        padding: 40px 30px;
+    }
+    
+    .vsi-fe3-footer__banner--item{
+        text-align: left;
+    }
+
+   .vsi-fe3-footer__banner--img{
+       display: none;
+   } 
+   .vsi-fe3-my-footer__bottom .item-right a {
+    text-align: left;
+    display: block;
+    }
+    
+}
+
+
+
+.vsi-fe3-my-footer__content--item-link{
+    text-decoration: none;
+    color: #cacaca;
+}
+
+.vsi-fe3-my-footer__content--item-link:hover{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.vsi-fe3-my-footer__content--item--list ul{
+    list-style-type: none;
+    font-size: 14px;
+    
+}
+.vsi-fe3-my-footer__content--item--list p{
+    color: #cacaca;
+}
+.vsi-fe3-my-footer__content--item--list ul li p{
+    color: #cacaca;
+}
+.vsi-fe3-my-footer__content--item--list ul li a{
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.vsi-fe3-my-footer__bottom--item p, .vsi-fe3-my-footer__bottom--item a{
+    color:  #cacaca;
+}
+.vsi-fe3-my-footer__bottom--item a{
+    text-decoration: none;
+    
+}
+.vsi-fe3-my-footer__bottom {
+    border-top:  1px solid #cacaca;
+    padding-top: 20px;
+}
+
+/* CSS footer - end */
+
+
+/* CSS Partner Stories - Start */
+.vsi-fe3-partner-stories__content{
+    position: relative;
+}
+.vsi-fe3-partner-stories__content--banner{
+    background-image: url("../images/partner-stories/bg-pc.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+    padding-bottom: 222px;
+    padding-top: 100px;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 82%, 0px 100%);
+    text-align: center;
+    padding-bottom: 222px;
+    padding-top: 100px;
+    
+}
+.vsi-fe3-partner-stories__content--banner-title{
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.vsi-fe3-partner-stories__content--banner-text{
+    font-size: 18px;
+}
+.vsi-fe3-partner-stories__content--banner-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+}
+
+.vsi-fe3-partner-stories__content--banner-icon{
+    width: 80px;
+    margin-right: 70px;
+    
+    
+}
+.vsi-fe3-partner-stories__content--banner-icon span{
+    margin-top: 20px;
+    color: #161616;
+    display: block;
+}
+
+.vsi-fe3-animate-left-1{
+    height: 52px;
+    width: 262px;
+    background-color: #75aae6;
+    position: absolute;
+    bottom: -6.4%;
+    left: 0;
+    transform: skewY(-4.1deg) scaleX(1);
+    z-index: 99;
+    animation-name: animation-left-1;
+    animation-duration: 2s;
+}
+.vsi-fe3-animate-left-2{
+    height: 52px;
+    width: 430px;
+    background-color: #a9cffa;
+    position: absolute;
+    bottom: -5.7%;
+    left: 0;
+    transform: skewY(-4.1deg) scaleX(1);
+    animation-name: animation-left-2;
+    animation-duration: 3s;
+}
+.vsi-fe3-animate-left-3{
+    height: 52px;
+    width: 160px;
+    background-color: #e7ebf1;
+    position: absolute;
+    bottom: -14.8%;
+    left: 0;
+    transform: skewY(-4.1deg) scaleX(1);
+    animation-name: animation-left-3;
+    animation-duration: 2s;
+}
+.vsi-fe3-animate-right-1{
+    height: 52px;
+    width: 160px;
+    background-color: #75aae6;
+    position: absolute;
+    bottom: 17.4%;
+    right:  0;
+    transform: skewY(-4.1deg) scaleX(1);
+    animation-name: animation-right-1;
+    animation-duration: 2s;
+}
+.vsi-fe3-animate-right-2{
+    height: 52px;
+    width: 330px;
+    background-color: transparent;
+    border: 1px solid #a9cffa;
+    position: absolute;
+    bottom: 8.7%;
+    right:  0;
+    transform: skewY(-4.1deg) scaleX(1);
+    animation-name: animation-right-2;
+    animation-duration: 2s;
+}
+
+@keyframes animation-right-1 {
+    from {
+      right: -100px;
+    } 
+    to {
+      right:  0px;
+    }
+  }
+@keyframes animation-right-2 {
+    from {
+      right:  -100px;
+    } 
+    to {
+      right: 0px;
+    }
+  }
+ 
+  @keyframes animation-left-1{
+    from {
+      left:  -100px;
+    } 
+    to {
+      left: 0;
+    }
+  }
+  @keyframes animation-left-2 {
+    from {
+        left:  -100px;
+    } 
+    to {
+        left: 0;
+    }
+  }
+  @keyframes animation-left-3 {
+    from {
+        left:  -100px;
+    } 
+    to {
+        left: 0;
+    }
+  }
+
+/* CSS  Partner Stories - End*/

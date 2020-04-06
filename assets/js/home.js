@@ -33,10 +33,7 @@ $("#vsi-fe3-btn-menu").click(function () {
    }
 });
 
-// $( "#trigger-button" ).click(function() {
-//    $( "#vsi-fe3-btn-menu" ).trigger( "click" );
-   
-//  });
+
 
  $("#vsi-fe3-btn-menu").click(function () {     
      console.log("a");
@@ -98,4 +95,5 @@ $("#vsi-fe3-btn-menu").click(function () {
         $('.vsi-fe3-animate-right-2').addClass("vsi-fe3-our-solutions__right-2");
      }
  });
+ 
  // Solution - end

@@ -1,146 +1,218 @@
-/* CSS heder - start */
-/* Start Header */
-
-.vsi-fe3-my-header {
+.vsi-fe3-my-header{
     padding: 30px 0;
 }
-.my-logo {
+.my-logo{
     width: 65px;
     height: auto;
 }
-/* Navbar PC */
 
-.vsi-fe3-my-navbar ul li a {
+/* Navbar PC - start */
+.vsi-fe3-my-navbar ul li a{
     margin-left: 35px;
     font-size: 14px;
     font-weight: 600;
     color: var(--black);
-}
-.vsi-fe3-my-navbar ul li a:hover {
-    color: var(--orager);
-}
-
-/* @media (max-width: 576.98px) { 
-    .vsi-fe3-my-navbar ul li a{
-        margin-left: 0px;
-        
-       }
    
 
- } */
-
-.vsi-fe3-my-navbarNav {
+}
+.vsi-fe3-my-navbar ul li a:hover{
+    color: var(--orager);
+}
+.vsi-fe3-my-navbarNav{
     text-align: right;
     margin-left: 320px;
+    
 }
-
-.vsi-fe3-my-navbarNav ul {
+.vsi-fe3-my-navbarNav ul{
     align-items: center;
 }
 .vsi-fe3-li {
-    padding: 0 20px;
+   padding: 0 20px;
+   
 }
-.vsi-fe3-test {
+.vsi-fe3-test{
     background-color: var(--black);
 }
-.vsi-fe3-link {
-    width: 50px;
-}
-.vsi-fe3-link img {
-    margin: 15px 15px;
+.vsi-fe3-link{
+	width: 50px;
+} 
+.vsi-fe3-link img{
+	margin: 15px 15px;
 }
 
-.vsi-fe3-my-navbar-mobile {
+.vsi-fe3-my-navbar-mobile{
+    
     display: none;
 }
-/* End Navbar PC */
-
-/* Navbar Mobile */
-
-@media (max-width: 576.98px) {
-    .vsi-fe3-my-navbar {
-        display: none;
-    }
-
-    .vsi-fe3-my-navbar-mobile {
-        display: block;
-        margin-right: 100px;
-    }
-
-    .vsi-fe3-my-navbar-mobile ul {
-        margin-left: 0px;
-        display: inline-block;
-    }
-    .vsi-fe3-my-navbar-mobile ul li {
-        text-align: left;
-    }
-
-    .vsi-fe3-my-navbar-mobile ul li a {
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--black);
-    }
-    .vsi-fe3-my-navbar-mobile ul li a:hover {
-        color: var(--orager);
-    }
-    .vsi-fe3-my-navbarNav-mobile ul {
-        align-items: center;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .vsi-fe3-my-navbar {
-        display: none;
-    }
-
-    .vsi-fe3-my-navbar-mobile {
-        display: block;
-        margin-right: 100px;
-    }
-
-    .vsi-fe3-my-navbar-mobile ul {
-        margin-left: 0px;
-        display: inline-block;
-    }
-    .vsi-fe3-my-navbar-mobile ul li {
-        text-align: left;
-    }
-
-    .vsi-fe3-my-navbar-mobile ul li a {
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--black);
-    }
-    .vsi-fe3-my-navbar-mobile ul li a:hover {
-        color: var(--orager);
-    }
-    .vsi-fe3-my-navbarNav-mobile ul {
-        align-items: center;
-    }
-}
-
-/* End Navbar Mobile */
+/* Navbar PC - end */
 
 .vsi-fe3__header--animation {
     animation-name: test;
     animation-duration: 0.5s;
-
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode:forwards;
 }
-
 @keyframes test {
-    0% {
-        margin-top: 0px;
-    }
-
-    100% {
-        margin-top: -40px;
-    }
+    0%   { margin-top: 0px;}
+    100% { margin-top: -40px;}
 }
 
-/* End Header */
-/* CSS heder - end */
+/* Navbar Mobile */
+  @keyframes test-animate-menu-mobile{
+    0%   { margin-top: 0px;}
+    100% { margin-top: -40px;}
+ } 
+.vsi-fe3-animation-menu-mobile   {
+    animation-name: test-animate-menu-mobile;
+    animation-duration: 1s;
+    transform: translateY(50px);
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+@keyframes test-animate-menu-mobile-top{
+    from{
+        left:  -500px;
+    }
+    to{
+        left: 0px;
+    }
+    
+ } 
+
+
+.vsi-fe3-my-navbar-mobile-hide{
+    top: 0;
+    color: white;
+    background-color: black ;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    padding: 40px 60px;
+}
+
+.vsi-fe3-my-navbar-mobile-show{
+    display: block;
+    animation-name: test-animate-menu-mobile-top;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+   
+}
+
+
+@media (min-width: 991.98px) {
+    #test-button {
+    display: none;
+}
+}
+
+@media (max-width: 991.98px) {
+    
+    .vsi-fe3-my-navbarNav-mobile{
+       
+        position: absolute;
+        left: 0 ;
+    }
+    .vsi-fe3-my-navbar{
+        display: none;
+    }
+    .vsi-fe3-my-navbar-mobile{
+         display: block;
+         margin-right: 100px;
+         /* position: absolute;
+         left: 0; */
+    }
+    #vsi-fe3-btn-menu{
+        position: absolute;
+        right: -20% !important;
+    }
+    .vsi-fe3-my-navbar-mobile ul {
+        margin-left: 0px;
+        display: inline-block;
+    }
+    .vsi-fe3-my-navbar-mobile ul li {
+        text-align: left;
+    }
+    .vsi-fe3-my-navbar-mobile ul li a{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--black);
+    }
+    .vsi-fe3-my-navbar-mobile ul li a:hover{
+        color: var(--orager);
+    }
+    .vsi-fe3-my-navbarNav-mobile ul{
+        align-items: center;
+    }
+    
+    .vsi-fe3-my-navbar{
+        display: none;
+    }
+    .vsi-fe3-my-navbar-mobile{
+        display: block;
+         margin-right: 100px;
+    }
+    .vsi-fe3-my-navbar-mobile ul {
+        margin-left: 0px;
+        display: inline-block;
+       
+    }
+    .vsi-fe3-my-navbar-mobile ul li {
+        text-align: left;
+    }
+
+    .vsi-fe3-my-navbar-mobile ul li a{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--black);
+    
+    }
+    .vsi-fe3-my-navbar-mobile ul li a:hover{
+        color: var(--orager);
+    }
+    .vsi-fe3-my-navbarNav-mobile ul{
+        align-items: center;
+    }
+ }
+
+ 
+
+ .vsi-fe3-my-navbarNav-footer-mobile-lang{
+     position: absolute;
+     bottom: 0;
+     color: #8b8989;
+  
+ }
+ .vsi-fe3-my-navbarNav-footer-mobile-contact{
+    position: absolute;
+    bottom: 0;
+    color: #8b8989;
+    margin-left: 100px;
+   
+ }
+.vsi-fe3-my-navbarNav-footer-mobile-lang:hover{
+     text-decoration: none;
+     color: #8b8989;
+ }
+.vsi-fe3-my-navbarNav-footer-mobile-contact:hover{
+    text-decoration: none;
+    color: #8b8989;
+}
+
+.vsi-fe3-my-navbarNav-footer-mobile-logo{
+    position: absolute;
+     bottom: 2%;
+     right: 2%;
+}
+
+.vsi-fe3-my-navbarNav-footer-mobile-hide{
+    display: none;
+}
+.vsi-fe3-my-navbarNav-footer-mobile-show{
+    display: block;
+}
+
+/* End Navbar Mobile */
 
 /* CSS footer - start */
 .vsi-fe3-my-footer__banner {
@@ -235,13 +307,886 @@
 
 /* CSS footer - end */
 /* our-solutions start */
+.vsi-fe2-our-solutions__banner--title{
+    font-size: 48px;
+    font-weight: 500;
+}
+.vsi-fe2-our-solutions__banner--title--text{
+    display: block;
+    text-align: center;
+    max-width: 770px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 0 50px;
+}
+.vsi-fe2-our-solutions__banner--title--text--span{
+    color:var(--orange) ;
+}
 .vsi-fe2-our-solutions__banner {
     margin: 0 auto;
     text-align: center;
 }
-.vsi-fe2-our-solutions__banner {
+.vsi-fe2-our-solutions__banner--btn.btn{
+    transition: 0.3s all ease;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    border-radius: 0;
+    outline: none;
+    padding: 15px 20px;
+    box-shadow: none;
+}
+.vsi-fe2-our-solutions__banner--btn.btn:hover{
+    color: var(--gray);
+}
+.vsi-fe2-our-solutions__banner--btn.btn:active{
+    color: var(--gray) !important;
+    background-color: var(--black)  !important;
+    border: 1px solid var(--black)  !important;
+    outline: 0  !important;
+    
 }
 .vsi-fe2-our-solutions-wrap {
     background-color: var(--light-gray);
-    padding: 100px 0 203px;
+    padding: 100px 0 285px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 77%, 0% 100%);
 }
+.vsi-fe2-our-solutions {
+    position: relative;
+}
+.rec {
+    height: 50px;
+    transition: 1.5s all ease-out;
+    margin-left: auto;
+}
+.rec-image1 {
+    position: absolute;
+    left: 0px;
+    bottom: -27px;
+}
+.rec.rec-animate {
+    transform: skewY(-5deg) scaleX(1);
+}
+.rec.our-visual-1-1 {
+    width: 400px;
+    position: relative;
+    margin: 0;
+}
+.rec.our-visual-1-1::before {
+    position: absolute;
+    content: "";
+    width: 218px;
+    left: 0;
+    top: 0;
+    background-color: #69a583;
+    height: 100%;
+}
+.rec.our-visual-1-2 {
+    width: 360px;
+    margin-left: 217px;
+    margin-top: -15px;
+}
+.rec.green {
+    background-color: #a0d9b9;
+}
+.rec.gray-border {
+    border: 1px solid #e7ebf1;
+    background-color: transparent;
+}
+.rec-image2 {
+    position: absolute;
+    right: 0;
+    bottom: -34px;
+}
+.rec.our-visual-2-1 {
+    width: 196px;
+    margin-left: auto;
+}
+.rec.gray {
+    background-color: #e7ebf1;
+}
+.rec.our-visual-2-2 {
+    width: 231px;
+    margin-right: 76px;
+    margin-top: 7px;
+}
+.rec.our-visual-2-3 {
+    width: 76px;
+    margin-top: -12px;
+    margin-left: auto;
+}
+.vsi-fe2-our-solutions-platform {
+    margin-top: -242px !important;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+.vsi-fe2-our-solutions-platform-image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vsi-fe2-our-solutions-platform-image-left {
+    width: 620px;
+}
+.vsi-fe2-our-solutions-platform-image-right {
+    width: 350px;
+    margin-left: -130px;
+    margin-bottom: 150px !important;
+}
+.vsi-fe2-our-solutions-platform-image-left,
+.vsi-fe2-our-solutions-platform-image-left img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+}
+.vsi-fe2-our-solutions-platform-details .content{
+    text-align: center;
+    font-size: 16px;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    color: #a0d9b9;
+    font-weight: 900;
+}
+.vsi-fe2-our-solutions-platform-details{
+    border-bottom: 1px solid var(--weak-gray );
+}
+.vsi-fe2-our-solutions-analytics-content-bottom{
+    display: flex;
+
+}
+.vsi-fe2-our-solutions-analytics-content-bottom-inner h4{
+    margin-bottom: 18px;
+}
+.vsi-fe2-our-solutions-analytics-content-bottom-inner .des{
+    font-size: 18px;
+    font-weight: 400;
+}
+.vsi-fe2-our-solutions-analytics{
+    padding:50px 0;
+}
+.vsi-fe2-our-solutions-analytics-content-top h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.vsi-fe2-our-solutions-analytics-lottie-show-right .img-right{
+    max-width: 100% !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+.swiper-container {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.vsi-fe2-our-solutions-marketing .vsi-fe2-our-solutions-marketing-wrap .content-bottom{
+    display: flex;
+}
+.swiper-pagination {
+    position: relative;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    outline: none;
+    background-color: var(--orange);
+}
+.imgSwiper{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details{
+   display: flex;
+   width: 74%;
+   border-radius: 3px;
+   box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.22);
+   background-color: #fdfdfe;
+   margin: 0 auto 20px;
+   padding: 28px 40px;
+   transition: 0.2s all ease;
+   height: 120px;
+}
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details .per{
+   border-radius: 50%;
+   flex: 0 0 40px;
+   height: 40px;
+   background-color: #c9d2e4;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 22px;
+   color: #959fb0;
+
+}
+.vsi-fe2-our-solutions-management-details-right h3{
+    font-size: 32px;
+    font-weight: 500;
+}
+.vsi-fe2-our-solutions-management-details-right .content{
+   padding-top: 20%;
+}
+.vsi-fe2-our-solutions-management-system .content h3{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+/* section vsi-fe2-our-solutions-management-system -start*/
+.vsi-fe2-our-solutions-management-system .content{
+    padding-right: 32%;
+    margin-top: 15px;   
+}
+.vsi-fe2-our-solutions-management-system .channel{
+    margin: auto 0 !important;
+}
+.vsi-fe2-our-solutions-management-system .channel .row{
+    margin-bottom: 60px !important;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.vsi-fe2-our-solutions-management-system .channel .logo{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.vsi-fe2-our-solutions-management-system .channel .logo img{
+    max-width: 100%;
+    box-shadow: none;
+}
+.vsi-fe2-our-solutions-management-system .channel .img-channel-1{
+max-width: 126px;
+height: 25px;
+}
+.vsi-fe2-our-solutions-management-system .channel .img-channel-2{
+    max-width: 100px;
+    height: 30px;
+}
+.vsi-fe2-our-solutions-management-system .channel .img-channel-3{
+    max-width: 125px;
+    height: 38px;
+}
+.vsi-fe2-our-solutions-management-system .channel .img-channel-4{
+    max-width: 80px;
+    height: 45px;
+}
+.vsi-fe2-our-solutions-management-system .channel .img-channel-5{
+    width: 130px;
+    height: 30px;
+}
+.vsi-fe2-our-solutions-management-system .channel .img-channel-6{
+    width: 146px;
+    height: 25px;
+}
+.block-bottom-1{
+    height: 26px;
+    width: 90%;
+    background-color: #e7ebf1;
+    margin: 0 auto;
+    border-radius: 0 0 3px 3px;
+}
+.block-bottom-2{
+    height: 26px;
+    width: 80%;
+    background-color: #f3f6f9;
+    margin: 0 auto;
+    border-radius: 0 0 3px 3px;
+}
+    /*sectionvsi-fe2-our-solutions-management-system-end*//*=========================*//*animationscalebox-start*/.vsi-fe2-our-solutions-management.vsi-fe2-our-solutions-management-details:first-child
+{
+    animation-name: basic1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details:first-child .per{
+    animation-name: per1 ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details:first-child .content{
+    animation-name: content1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details:nth-child(2){
+    animation-name: basic2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details:nth-child(2) .per{
+    animation-name: per2 ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details:nth-child(2) .content{
+    animation-name: content2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details:last-child{
+    animation-name: basic3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details:last-child .per{
+    animation-name: per3 ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.vsi-fe2-our-solutions-management .vsi-fe2-our-solutions-management-details:last-child .content{
+    animation-name: content3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.vsi-fe2-our-solutions-management{
+    position: relative;
+}
+.vsi-fe2-our-solutions-management-details-mb-item .content{
+    display: none;
+}
+.vsi-fe2-our-solutions-management-details-mb-item .content{
+    opacity: 0;
+}
+.vsi-fe2-our-solutions-management-details-mb-item .content{
+    opacity: 1;
+}
+.vsi-fe2-our-solutions-management .content.active{
+    display: block;
+}
+.our-visual-3-1{
+    width: 60px;
+}
+.our-visual-3-2{
+    width: 218px;
+    border: 1px solid green;
+    margin-top: 5px;
+}
+.vsi-fe2-our-solutions-management-details-mb-item{
+    display: flex;
+   width: 100%;
+   border-radius: 3px;
+   box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.22);
+   background-color: #fdfdfe;
+   margin: 0 auto 20px;
+   padding: 28px 40px;
+   transition: 0.2s all ease;
+   height: 104px;
+}
+.vsi-fe2-our-solutions-management-details-mb-item .per{ 
+    border-radius: 50%; flex: 0 0 40px; 
+    height: 40px; 
+    background-color: #c9d2e4; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 22px; color: #959fb0; 
+}
+
+@keyframes basic1 {
+    0% {
+        width: 74%;
+        height: 104px;
+        transform: scale(0.9);
+    }
+
+    15% {
+        width: 80%;
+        height: 115px;
+        transform: scale(1);
+    }
+
+    20% {
+        width: 80%;
+        height: 115px;
+        transform: scale(1);
+    }
+
+    35% {
+        width: 74%;
+        height: 104px;
+        transform: scale(0.9);
+    }
+
+    100% {
+        width: 74%;
+        height: 104px;
+        transform: scale(0.9);
+    }
+}
+@keyframes per1 {
+    0% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+
+    15% {
+        background-color: #a0d9b9;
+        color: #69a583;
+    }
+
+    20% {
+        background-color: #a0d9b9;
+        color: #69a583;
+    }
+
+    35% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+
+    100% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+}
+@keyframes content1 {
+    0% {
+        color: #959fb0;
+    }
+
+    15% {
+        color: #161616;
+    }
+
+    20% {
+        color: #161616;
+    }
+
+    35% {
+        color: #959fb0;
+    }
+
+    100% {
+        color: #959fb0;
+    }
+}
+@keyframes basic2 {
+    0% {
+        width: 74%;
+        height: 104px;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    35% {
+        width: 74%;
+        height: 104px;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    50% {
+        width: 80%;
+        height: 115px;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    55% {
+        width: 80%;
+        height: 115px;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    70% {
+        width: 74%;
+        height: 104px;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        width: 74%;
+        height: 104px;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+@keyframes per2 {
+    0% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+
+    35% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+
+    50% {
+        background-color: #a0d9b9;
+        color: #69a583;
+    }
+
+    55% {
+        background-color: #a0d9b9;
+        color: #69a583;
+    }
+
+    70% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+
+    100% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+}
+@keyframes content2 {
+    0% {
+        color: #959fb0;
+    }
+
+    15% {
+        color: #161616;
+    }
+
+    20% {
+        color: #161616;
+    }
+
+    35% {
+        color: #959fb0;
+    }
+
+    100% {
+        color: #959fb0;
+    }
+}
+@keyframes basic3{
+    0% {
+        width: 74%;
+        height: 104px;
+        transform: scale(0.9);
+    }
+
+    70% {
+        width: 74%;
+        height: 104px;
+        transform: scale(0.9);
+    }
+
+    85% {
+        width: 80%;
+        height: 115px;
+        transform: scale(1);
+    }
+
+    90% {
+        width: 80%;
+        height: 115px;
+        transform: scale(1);
+    }
+
+    100% {
+        width: 74%;
+        height: 104px;
+        
+        transform: scale(0.9);
+    }
+
+    100% {
+        width: 74%;
+        height: 104px;
+       
+        transform: scale(0.9);
+        
+}
+}
+@keyframes per3{
+    0% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+
+    70% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+
+    85% {
+        background-color: #a0d9b9;
+        color: #69a583;
+    }
+
+    90% {
+        background-color: #a0d9b9;
+        color: #69a583;
+    }
+
+    100% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+
+    100% {
+        background-color: #c9d2e4;
+        color: #959fb0;
+    }
+}
+@keyframes content3 {
+    0% {
+        color: #959fb0;
+    }
+
+    70% {
+        color: #959fb0;
+    }
+
+    85% {
+        color: #161616;
+    }
+
+    90% {
+        color: #161616;
+    }
+
+    100% {
+        color: #959fb0;
+    }
+
+    100% {
+        color: #959fb0;
+    }
+}
+/* animation scale box -end */
+/* ======================== */
+@media (max-width: 575.98px) { 
+    .vsi-fe2-our-solutions__banner--title{
+        font-size: 32px !important;
+        margin-bottom: 20px;
+    }
+    .vsi-fe2-our-solutions__banner--title--text {
+        margin: 0 auto;
+        font-size: 16px;
+        padding: 0;
+    }
+    .rec-image1{
+        display: none;
+    }
+    .our-visual-2-1{
+        background-color: #69a583 !important;
+
+    }
+    .our-visual-2-2,.our-visual-2-3{
+        display: none;
+    }
+    .rec-image2 {
+        bottom: 111px;
+    }
+    .rec.our-visual-2-1 {
+        width: 141px;
+    }
+    .our-visual-2-2{
+        display: none;
+    }
+    .our-visual-2-3{
+        display: none;
+    }
+    .vsi-fe2-our-solutions-platform-image-left, .vsi-fe2-our-solutions-platform-image-left img {
+        max-width: 100%;
+        height: auto;
+        border: none;
+        box-shadow: none;
+        order: 2;
+        transform: rotate(3deg);
+        margin-left: 24px;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+    .vsi-fe2-our-solutions-platform-image-right {
+        width: 209px;
+        margin-left: 0 !important; 
+        margin-bottom: 0 !important;
+        order: 1;
+        transform: rotate(-2deg);
+        position: absolute;
+        left: 0;
+        top: 50px;
+        overflow: hidden;
+    }
+    .vsi-fe2-our-solutions-platform-image-wrap {
+        margin-top: 45px;
+    }
+    .mb-5, .my-5{
+        margin-bottom: 0 !important;
+    }
+    .vsi-fe2-our-solutions-platform-details .content {
+        text-align: center;
+        font-size: 16px;
+        display: flex;
+        padding-left: 22%;
+    }
+    .pc-show{
+        display: none;
+    }
+    .vsi-fe2-our-solutions-marketing .vsi-fe2-our-solutions-marketing-wrap .content-bottom {
+        display: block;
+    }
+    .vsi-fe2-our-solutions-management-system .content{
+        padding: 0;
+        margin-bottom: 60px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 15px
+    }
+    .vsi-fe2-our-solutions-management-system .content h3{
+        font-size: 24px;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: -74px;
+        left: 0;
+        height: 100px;
+        width: 100%;
+    }
+    .vsi-fe2-our-solutions-management-details-mb-item  .per{
+        color: #69a583;
+        background-color:#a0d9b9 ; 
+        
+    }  
+    .vsi-fe2-our-solutions-management-details-mb-item .content h4{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .vsi-fe2-our-solutions-management-details-mb-item {
+        padding: 29px 6px;
+    }
+ }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .vsi-fe2-our-solutions__banner--title{
+        font-size: 32px !important;
+        margin-bottom: 20px;
+    }
+    .vsi-fe2-our-solutions__banner--title--text {
+        margin: 0 auto;
+        font-size: 16px;
+        padding: 0;
+    }
+    .rec-image1{
+        display: none;
+    }
+    .our-visual-2-1{
+        background-color: #69a583 !important;
+
+    }
+    .our-visual-2-2,.our-visual-2-3{
+        display: none;
+    }
+    .rec-image2 {
+        bottom: 111px;
+    }
+    .rec.our-visual-2-1 {
+        width: 141px;
+    }
+    .our-visual-2-2{
+        display: none;
+    }
+    .our-visual-2-3{
+        display: none;
+    }
+    .vsi-fe2-our-solutions-platform-image-left, .vsi-fe2-our-solutions-platform-image-left img {
+        max-width: 77%;
+        height: auto;
+        border: none;
+        box-shadow: none;
+        order: 2;
+        transform: rotate(3deg);
+        margin-left: 80px;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+    .vsi-fe2-our-solutions-platform-image-right {
+        width: 209px;
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
+        order: 1;
+        transform: rotate(-2deg);
+        position: absolute;
+        left: 64px;
+        top: 61px;
+        overflow: hidden;
+    }
+    .vsi-fe2-our-solutions-platform-image-wrap {
+        margin-top: 45px;
+    }
+    .mb-5, .my-5{
+        margin-bottom: 0 !important;
+    }
+    .vsi-fe2-our-solutions-platform-details .content {
+        text-align: center;
+        font-size: 16px;
+        display: flex;
+        padding-left: 5%;
+    }
+   
+    .vsi-fe2-our-solutions-platform-details .content {
+        text-align: center;
+        font-size: 16px;
+        display: flex;
+        padding-left: 22%;
+    }
+    .pc-show{
+        display: none;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: -27px;
+        left: 0;
+        height: 50px;
+        width: 100%;
+    }
+    .vsi-fe2-our-solutions-marketing .vsi-fe2-our-solutions-marketing-wrap .content-bottom {
+        display: block;
+    }
+    .img-right{
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+    .vsi-fe2-our-solutions-management-system .channel .logo img{
+      margin: 0 auto;
+    }
+    .vsi-fe2-our-solutions-management-system .content{
+        padding: 0;
+        margin: 0;
+        width: 102%;
+        max-width: 102%;
+        font-size: 15px
+    }
+    .vsi-fe2-our-solutions-management-details-mb-item  .per{
+        color: #69a583;
+        background-color:#a0d9b9 ; 
+             
+    }   
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   .mb-show{
+       display: none;
+   }
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .mb-show{
+        display: none;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .mb-show{
+        display: none;
+    }
+ }
