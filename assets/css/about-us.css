@@ -364,7 +364,7 @@
     height: auto;
     cursor: pointer;
     overflow: hidden;
-    padding: 40px;
+    padding: 53px;
     transition: 0.5s all ease-in-out;
 }
 .vsi-fe1-pad-btn{
@@ -396,6 +396,9 @@ svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
     font-weight: 900;
     margin-top: auto;
     display: block;
+}
+.vsi-fe1-mg-top-25{
+    margin-top: 25px;
 }
 .vsi-fe1-icon-block{
     display: none !important;
@@ -1059,6 +1062,9 @@ svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
     .vsi-fe1-text-content{
         width: 100% !important;
     }
+    .vsi-fe1-mg-top-25{
+        margin-top: 0px !important;
+    }
     
  }
 
@@ -1251,6 +1257,9 @@ svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
     }
     .vsi-fe1-text-content{
         width: 100% !important;
+    }
+    .vsi-fe1-mg-top-25{
+        margin-top: 0px !important;
     }
  }
 
