@@ -54,5 +54,18 @@ $(window).scroll(function () {
  
   // js header - end
   
+   //js main - start
+
+   $(".vsi-fe3-partner-stories--view").click(function () {     
+    if ( !$(".vsi-fe3-partner-stories__content--stories-item-right").hasClass("vsi-fe3-partner-stories__content--stories-item-right-show")) {
+        $(".vsi-fe3-partner-stories__content--stories-item-right").addClass("vsi-fe3-partner-stories__content--stories-item-right-show");
+    } 
+    if ( !$(".vsi-fe3-partner-stories--view").hasClass("vsi-fe3-partner-stories--view-hide")) {
+        $(".vsi-fe3-partner-stories--view").addClass("vsi-fe3-partner-stories--view-hide");
+    } 
+ });
+   //js main - end
+
+
   // js footer - start 
   // js footer - end 

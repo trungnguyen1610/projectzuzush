@@ -442,9 +442,9 @@ body {
     width: 262px;
     background-color: #75aae6;
     position: absolute;
-    bottom: -6.4%;
+    bottom: -5%;
     left: 0;
-    transform: skewY(-4.1deg) scaleX(1);
+    transform: skewY(-4.1deg) skewX(1deg) ;
     z-index: 99;
     animation-name: animation-left-1;
     animation-duration: 2s;
@@ -454,9 +454,9 @@ body {
     width: 430px;
     background-color: #a9cffa;
     position: absolute;
-    bottom: -5.7%;
+    bottom: -4%;
     left: 0;
-    transform: skewY(-4.1deg) scaleX(1);
+    transform: skewY(-4.1deg) skewX(1deg) ;
     animation-name: animation-left-2;
     animation-duration: 3s;
 }
@@ -465,9 +465,9 @@ body {
     width: 160px;
     background-color: #e7ebf1;
     position: absolute;
-    bottom: -14.8%;
+    bottom: -12.9%;
     left: 0;
-    transform: skewY(-4.1deg) scaleX(1);
+    transform: skewY(-4.1deg) skewX(1deg) ;
     animation-name: animation-left-3;
     animation-duration: 2s;
 }
@@ -476,9 +476,9 @@ body {
     width: 160px;
     background-color: #75aae6;
     position: absolute;
-    bottom: 17.4%;
+    bottom: 17%;
     right:  0;
-    transform: skewY(-4.1deg) scaleX(1);
+    transform: skewY(-5.1deg) skewX(1.5deg) ;
     animation-name: animation-right-1;
     animation-duration: 2s;
 }
@@ -488,9 +488,9 @@ body {
     background-color: transparent;
     border: 1px solid #a9cffa;
     position: absolute;
-    bottom: 8.7%;
+    bottom: 8%;
     right:  0;
-    transform: skewY(-4.1deg) scaleX(1);
+    transform: skewY(-5.1deg) skewX(1.5deg) ;
     animation-name: animation-right-2;
     animation-duration: 2s;
 }
@@ -511,8 +511,7 @@ body {
       right: 0px;
     }
   }
- 
-  @keyframes animation-left-1{
+@keyframes animation-left-1{
     from {
       left:  -100px;
     } 
@@ -520,7 +519,7 @@ body {
       left: 0;
     }
   }
-  @keyframes animation-left-2 {
+@keyframes animation-left-2 {
     from {
         left:  -100px;
     } 
@@ -528,7 +527,7 @@ body {
         left: 0;
     }
   }
-  @keyframes animation-left-3 {
+@keyframes animation-left-3 {
     from {
         left:  -100px;
     } 
@@ -537,4 +536,344 @@ body {
     }
   }
 
+.vsi-fe3-partner-stories__content--title{
+    text-align: center;
+}
+.vsi-fe3-partner-stories__content--title h4{
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #161616;
+}
+.vsi-fe3__item--header-img{
+    border:1px solid #e7ebf1;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+.vsi-fe3-partner-stories__content--border-title{
+    margin-top: 20px;
+    width: 40px;
+    height: 1px;
+    background-color: #000000;
+    display: inline-block;
+}
+.vsi-fe3-partner-stories__item--header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.vsi-fe3__item--header-title-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vsi-fe3-partner-stories__item--body-item span{
+    font-weight: bold;
+}
+.vsi-fe3-partner-stories__content--stories-item-left{
+    padding: 40px 40px 65px;
+}
+.vsi-fe3-partner-stories__quotes-sign{
+    text-align: center;
+}
+.vsi-fe3-partner-stories__quotes-sign span{
+    width: 22px;
+   
+    color: #a9cffa;
+    display: inline-block;
+}
+.vsi-fe3-partner-stories__quotes-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #161616;
+    margin-bottom: 30px;
+}
+.vsi-fe3-partner-stories__quotes-author span:first-child{
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #161616;
+    font-weight: bold;
+}
+.vsi-fe3-partner-stories__quotes-author span:last-child{
+    display: block;
+    text-align: center;
+}
+.vsi-fe3-partner-stories__content--stories-item-right{
+    padding: 80px 40px;
+    background-color: #f7f9fc;
+}
+.vsi-fe3-partner-stories__content--stories-item-left{
+    background-color: white;
+}
+.vsi-fe3-partner-stories-list{
+    box-shadow: 2px 2px 20px 5px #f5f5f5;
+}
+
+.vsi-fe3-partner-stories--view{
+    display: none;
+}
+
+
+
+@media (max-width : 767.98px){
+    .vsi-fe3-partner-stories--view{
+        display: inline-block;
+        background-color: transparent;
+    }
+    .vsi-fe3-partner-stories--view-hide{
+        display: none;
+    }
+    .vsi-fe3-partner-stories__content--stories-item-right-hide{
+        display: none;
+    }
+    .vsi-fe3-partner-stories__content--stories-item-right-show{
+        display: block;
+    }
+    .vsi-fe3-partner-stories--view-div{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        padding-bottom: 20px;
+
+    }
+
+}
+
+@media (max-width : 767.98px) {
+    .vsi-fe3-partner-stories__content--banner-item{
+        justify-content: start
+    }
+    .vsi-fe3-partner-stories__content--banner{
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    }
+    .vsi-fe3-animate-left-1{
+        height:40px;
+        width: 50px;
+        background-color: #75aae6;
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        transform: skewY(-1.5deg) scaleX(1);
+        z-index: 99;
+        animation-name: animation-left-1;
+        animation-duration: 2s;
+    }
+    .vsi-fe3-animate-left-2{
+        height: 40px;
+        width: 160px;
+        background-color: #a9cffa;
+        position: absolute;
+        bottom: 0.3%;
+        left: 0;
+        transform: skewY(-1.5deg) scaleX(1);
+        animation-name: animation-left-2;
+        animation-duration: 3s;
+    }
+    .vsi-fe3-animate-left-3{
+        display: none;
+        height: 52px;
+        width: 160px;
+        background-color: #e7ebf1;
+        position: absolute;
+        bottom: -12.9%;
+        left: 0;
+        transform: skewY(-4.1deg) skewX(1deg) ;
+        animation-name: animation-left-3;
+        animation-duration: 2s;
+    }
+    .vsi-fe3-animate-right-1{
+        height: 40px;
+        width: 30px;
+        background-color: #75aae6;
+        position: absolute;
+        bottom: 0%;
+        right:  0;
+        transform: skewY(-5.1deg) skewX(1.5deg) ;
+        animation-name: animation-right-1;
+        animation-duration: 2s;
+    }
+    .vsi-fe3-animate-right-2{
+        display: none;
+        height: 52px;
+        width: 330px;
+        background-color: transparent;
+        border: 1px solid #a9cffa;
+        position: absolute;
+        bottom: 7%;
+        right:  0;
+        transform: skewY(-5.1deg) skewX(1.5deg) ;
+        animation-name: animation-right-2;
+        animation-duration: 2s;
+    }
+
+}
+
+@media (max-width : 575.98px){
+    .vsi-fe3-partner-stories__content--banner{
+        height: 1000px;
+    }
+    .vsi-fe3-partner-stories__content--banner-icon {
+        width: 80px;
+        margin-right: 25px;
+    }
+    .vsi-fe3-partner-stories__content--banner-item{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .vsi-fe3-animate-left-1{
+        
+        height:40px;
+        width: 50px;
+        background-color: #75aae6;
+        position: absolute;
+        bottom: 0.5%;
+        left: 0;
+        transform:   skewY(-5.1deg) skewX(3deg);
+        z-index: 99;
+        animation-name: animation-left-1;
+        animation-duration: 2s;
+    }
+    .vsi-fe3-animate-left-2{
+      
+        height: 40px;
+        width: 160px;
+        background-color: #a9cffa;
+        position: absolute;
+        bottom: 0.5%;
+        left: 0;
+        transform: skewY(-5.1deg) skewX(3deg);
+        animation-name: animation-left-2;
+        animation-duration: 3s;
+    }
+    .vsi-fe3-animate-left-3{
+        display: none;
+        height: 52px;
+        width: 160px;
+        background-color: #e7ebf1;
+        position: absolute;
+        bottom: -12.9%;
+        left: 0;
+        transform: skewY(-4.1deg) skewX(1deg) ;
+        animation-name: animation-left-3;
+        animation-duration: 2s;
+    }
+    .vsi-fe3-animate-right-1{
+       
+        height: 40px;
+        width: 30px;
+        background-color: #75aae6;
+        position: absolute;
+        bottom: 0%;
+        right:  0;
+        transform: skewY(-5.1deg) skewX(1.5deg) ;
+        animation-name: animation-right-1;
+        animation-duration: 2s;
+    }
+    .vsi-fe3-animate-right-2{
+        display: none;
+        height: 52px;
+        width: 330px;
+        background-color: transparent;
+        border: 1px solid #a9cffa;
+        position: absolute;
+        bottom: 7%;
+        right:  0;
+        transform: skewY(-5.1deg) skewX(1.5deg) ;
+        animation-name: animation-right-2;
+        animation-duration: 2s;
+    }
+
+
+}
+
+@media (min-width : 991.98px){
+
+    .vsi-fe3-animate-left-1{
+        height: 52px;
+        width: 262px;
+        background-color: #75aae6;
+        position: absolute;
+        bottom: -4%;
+        left: 0;
+        transform: skewY(-4.8deg) skewX(1deg) ;
+        z-index: 99;
+        animation-name: animation-left-1;
+        animation-duration: 2s;
+    }
+    .vsi-fe3-animate-left-2{
+        height: 52px;
+        width: 430px;
+        background-color: #a9cffa;
+        position: absolute;
+        bottom: -3.4%;
+        left: 0;
+        transform: skewY(-5deg) skewX(2deg) ;
+        animation-name: animation-left-2;
+        animation-duration: 3s;
+    }
+    .vsi-fe3-animate-left-3{
+        height: 52px;
+        width: 160px;
+        background-color: #e7ebf1;
+        position: absolute;
+        bottom: -12.9%;
+        left: 0;
+        transform: skewY(-4.1deg) skewX(1deg) ;
+        animation-name: animation-left-3;
+        animation-duration: 2s;
+    }
+    .vsi-fe3-animate-right-1{
+        height: 52px;
+        width: 160px;
+        background-color: #75aae6;
+        position: absolute;
+        bottom: 16%;
+        right:  0;
+        transform: skewY(-5.1deg) skewX(1.5deg) ;
+        animation-name: animation-right-1;
+        animation-duration: 2s;
+    }
+    .vsi-fe3-animate-right-2{
+        height: 52px;
+        width: 330px;
+        background-color: transparent;
+        border: 1px solid #a9cffa;
+        position: absolute;
+        bottom: 7%;
+        right:  0;
+        transform: skewY(-5.1deg) skewX(1.5deg) ;
+        animation-name: animation-right-2;
+        animation-duration: 2s;
+    }
+
+}
+
+@media (max-width : 767.98px){
+    .vsi-fe3-partner-stories--view{
+        display: inline-block;
+        background-color: transparent;
+    }
+    .vsi-fe3-partner-stories--view-hide{
+        display: none;
+    }
+    .vsi-fe3-partner-stories__content--stories-item-right-hide{
+        display: none;
+    }
+    .vsi-fe3-partner-stories__content--stories-item-right-show{
+        display: block;
+    }
+    .vsi-fe3-partner-stories--view-div{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        padding-bottom: 20px;
+
+    }
+}
 /* CSS  Partner Stories - End*/
