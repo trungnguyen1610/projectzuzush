@@ -322,7 +322,6 @@
     padding: 0;
     margin: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding-left: 150px;
     padding-right: 150px;
@@ -362,10 +361,14 @@
     background-color: #f7f9fc;
     border-radius: 10px;
     text-align: center;
-    height: 280px;
+    height: auto;
     cursor: pointer;
     overflow: hidden;
+    padding: 40px;
     transition: 0.5s all ease-in-out;
+}
+.vsi-fe1-pad-btn{
+    padding: 53px 0px;
 }
 .vsi-fe1-text-icon{
     font-size: 18px;
@@ -375,6 +378,15 @@
     padding-top: 20px;
     margin: 0;
 }
+svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.fa, .fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
 .fa-chevron-down{
     font-family: "Font Awesome 5 Pro";
     font-weight: 900; 
@@ -383,18 +395,22 @@
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     margin-top: auto;
+    display: block;
+}
+.vsi-fe1-icon-block{
+    display: none !important;
 }
 .vsi-fe1-active{
     background: var(--white);
     position: relative;
     width: 457px;
-    height: 280px;
     z-index: 99;
 }
 .vsi-fe1-text-content{
     font-size: 18px;
-    padding: 0;
+    padding: 0px;
     margin: 20px 0px;
+    width: 350px !important;
     line-height: 27px;
     text-align: center;
     font-family: 'Nunito Sans';
@@ -411,6 +427,7 @@
     padding: 65px 0px 0px 150px;
     margin: 0;
     position: relative;
+    overflow: hidden;
     right: 0;
 }
 .vsi-fe1-img-hiring img{
@@ -419,9 +436,13 @@
     height: 392px;
     padding: 0;
     margin: 0;
+    position: relative;
+    overflow: hidden;
+    right: 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .vsi-fe1-text-hiring{
     width: 100%;
     max-width: 100%;
@@ -1021,6 +1042,23 @@
     .vsi-fe1-tooltip:hover .vsi-fe1-tooltip-hover{
         display: none !important;
     }
+    .rectangle-item{
+        width: 100%;
+        min-width: 100%;
+        display: block !important;
+    
+    }
+    .vsi-fe1-hover-box {
+        flex-direction: column !important;
+        display: block !important;
+        width: 100%;
+        max-width: 100%;
+        padding: 0px !important;
+        text-align: center;
+    }
+    .vsi-fe1-text-content{
+        width: 100% !important;
+    }
     
  }
 
@@ -1049,9 +1087,10 @@
         display: none;
     }
     .vsi-fe1-rec-orange-left {
-        bottom: 101px;
+        /* top: 0; */
+        bottom: 277px;
         -webkit-transform: skewY(-4.2deg) scaleX(1);
-        transform: skewY(-4.2deg) scaleX(1);
+        transform: skewY(-1.2deg) scaleX(1);
         width: 207px;
         -webkit-animation-name: chart-orange; /* Safari 4.0 - 8.0 */
         -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
@@ -1101,7 +1140,7 @@
         -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
         animation-name: chart-orange-border-right;
         animation-duration: 1s;
-        bottom: -6px;
+        bottom: 140px;
         animation-fill-mode: forwards;
     }
     /* Safari 4.0 - 8.0 */
@@ -1178,7 +1217,7 @@
         padding-bottom: 180px;
     }
     .vsi-fe1-rec-countries-left {
-        top: 21px;
+        top: 35px;
     }
     .vsi-fe1-countries-world.vsi-fe1-tooltip {
         flex-direction: column;
@@ -1195,6 +1234,23 @@
     }
     .vsi-fe1-tooltip:hover .vsi-fe1-tooltip-hover{
         display: none !important;
+    }
+    .rectangle-item{
+        width: 100%;
+        min-width: 100%;
+        display: block !important;
+    
+    }
+    .vsi-fe1-hover-box {
+        flex-direction: column !important;
+        display: block !important;
+        width: 100%;
+        max-width: 100%;
+        padding: 0px !important;
+        text-align: center;
+    }
+    .vsi-fe1-text-content{
+        width: 100% !important;
     }
  }
 
