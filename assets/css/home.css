@@ -1,8 +1,24 @@
+
 /* CSS heder - start */
-.vsi-fe3-my-header{
+header{
+    z-index: 99;
     position: fixed;
     top: 0;
-    left:0;
+    width: 100%;
+    background-color: white;
+}
+
+
+
+.vsi-fe3-header-animation-hide{
+    display: none;
+}
+.vsi-fe3-header-animation-show{
+    display: block;
+}
+
+.vsi-fe3-my-header{
+    
 
     padding: 30px 0;
 }
@@ -103,9 +119,13 @@
     animation-fill-mode:forwards;
    
 }
+/* .vsi-fe3-header-mobile-animation{
+    display: none;
+} */
 
 
 @media (min-width: 991.98px) {
+   
     #test-button {
     display: none;
     }
@@ -119,15 +139,37 @@
         position: absolute;
         right: 0;
         top: 0;
-        z-index: 9999999999;
+        z-index: 9999999999999999999 !important;
         outline: none;
         display: none;
     }
-
+    
 }
 
 @media (max-width: 991.98px) {
-    
+    header{
+        display: none;
+        z-index: -99;
+    }
+    .vsi-fe3-header-mobile-animation{
+        display: block;
+        z-index: 9;
+        /* position: fixed; */
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background-color: white;
+    }
+    /* .is-active  {
+        
+        z-index: 9999999999;
+    } */
+    .vsi-fe3-header-mobile-animation-hide{
+        display: none;
+    }
+    .vsi-fe3-header-mobile-animation-show{
+        display: block;
+    }
     .vsi-fe3-my-navbarNav-mobile{
        
         position: absolute;
