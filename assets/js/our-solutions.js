@@ -1,38 +1,23 @@
 
 
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper1 = new Swiper('.swiper-container.s1', {
   
-
+ 
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    //   },
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-  
-  
   })
   
-//   $(document).ready(function () {
-  
-//     var quoteSwiper = new Swiper('.quote-slider');
-//     var imageSwiper = new Swiper('.image-slider', {
-//       nextButton: '.swiper-button-next',
-//       prevButton: '.swiper-button-prev',
-//     });
-  
-//     quoteSwiper.params.control = imageSwiper;
-//     imageSwiper.params.control = quoteSwiper;
-//   });
-/* change text js-start */
-
-
-/* change text js-end */
+  var mySwiper2 = new Swiper('.swiper-container.s2', {
+    effect: 'fade',
+      speed: 500,
+       autoplay: {
+      delay: 5000,
+   },
+  })
+  // aos animation start
+  AOS.init();
+  // aos animation end

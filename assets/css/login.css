@@ -1,0 +1,45 @@
+.vsi-fe3-login__content-logo{
+    text-align: center;
+}
+.vsi-fe3-login__content-logo img{
+    width: 90px;
+    height: 80px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.vsi-fe3-login__form {
+    text-align: center;
+}
+.vsi-fe3-login__form form{
+    width: 300px;
+    display: inline-block;
+}
+.vsi-fe3-login__form-input{
+    background-color: #f0f0f0;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.vsi-fe3-login__form-input:focus{
+    border: 1px solid #ced4da;
+    background-color: #e2e2e2;
+}
+.vsi-fe3-login__form--btn{
+    background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%);
+    border: 1px solid #CC4F0C;
+    color: white;
+   
+}
+.vsi-fe3-login__form--btn:hover{
+    background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%);
+    border: 1px solid #CC4F0C;
+    background-position: 0 -15px;
+    transition: 0.1s linear;
+    color: white;
+}
+.vsi-fe3-login__forgot-password{
+    text-align: center;
+}
+.vsi-fe3-login__forgot-password a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 14px;
+}
