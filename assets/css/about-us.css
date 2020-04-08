@@ -560,22 +560,7 @@ svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
     top: 0;
     right: 0;
 }
-.vsi-fe1-bg-color-left{
-    background-color: var(--light-gray);
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 235px;
-    height: 200px;
-}
-.vsi-fe1-bg-color-right{
-    background-color: var(--light-gray);
-    position: absolute;
-    right: 0;
-    bottom: -10px;
-    width: 235px;
-    height: 200px;
-}
+
 .vsi-fe1-icon{
     text-align: center;
     padding: 0;
@@ -1306,13 +1291,13 @@ svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
  }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    
+
  }
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    
+
  }
 
 @media (min-width: 1200px) { 
-    
+
  }  
