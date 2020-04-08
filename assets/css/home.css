@@ -1,5 +1,9 @@
 /* CSS heder - start */
 .vsi-fe3-my-header{
+    position: fixed;
+    top: 0;
+    left:0;
+
     padding: 30px 0;
 }
 .my-logo{
@@ -12,7 +16,7 @@
     margin-left: 35px;
     font-size: 14px;
     font-weight: 600;
-    color: var(--black);
+    color: #161616;
    
 
 }
@@ -129,9 +133,9 @@
         position: absolute;
         left: 0 ;
     }
-    .vsi-fe3-my-navbar{
+    /* .vsi-fe3-my-navbar{
         display: none;
-    }
+    } */
     .vsi-fe3-my-navbar-mobile{
          display: block;
          margin-right: 100px;
@@ -193,29 +197,33 @@
  .vsi-fe3-my-navbarNav-footer-mobile-lang{
      position: absolute;
      bottom: 0;
-     color: #8b8989;
+     color: #858383;
+     font-weight: 600;
   
  }
  .vsi-fe3-my-navbarNav-footer-mobile-contact{
     position: absolute;
     bottom: 0;
-    color: #8b8989;
+    color: #858383;
     margin-left: 100px;
+    font-weight: 600;
    
  }
 .vsi-fe3-my-navbarNav-footer-mobile-lang:hover{
      text-decoration: none;
-     color: #8b8989;
+     color: #858383;
+     font-weight: 600;
  }
 .vsi-fe3-my-navbarNav-footer-mobile-contact:hover{
     text-decoration: none;
-    color: #8b8989;
+    color: #858383;
+    font-weight: 600;
 }
 
 .vsi-fe3-my-navbarNav-footer-mobile-logo{
     position: absolute;
-     bottom: 2%;
-     right: 2%;
+    bottom: 2%;
+    right: 2%;
 }
 
 .vsi-fe3-my-navbarNav-footer-mobile-hide{
@@ -277,7 +285,84 @@
     }
    
 }
-   
+@media (max-width: 991.98px) {
+    .vsi-fe3-logo-menu-mobile{
+        width: 54px;
+        height: 50px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .hamburger .hamburger-inner{
+        width: 16px;
+        height: 2px;
+    }
+    .hamburger .hamburger-inner::before{
+        content: "";
+        width: 9px;
+        right: 0;
+        height: 2px;
+    }
+    .hamburger .hamburger-inner::after{
+        content: "";
+        width: 9px;
+        height: 2px;
+        left:  0;
+    }
+    .hamburger-box {
+        width: 16px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+    }
+    .hamburger.is-active .hamburger-inner::after {
+        width: 16px;
+    }
+    #test-button{
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .vsi-fe3-my-navbarNav-footer-mobile-logo{
+        width: 42px;
+        height: 24px;
+    }
+    .vsi-fe3-my-navbarNav-footer-mobile{
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 20px;
+        padding: 0 20px 30px;
+        color: #858383;
+    }
+    .vsi-fe3-footer-mobile-logo{
+        font-size: 16px;
+        font-weight: 600;
+        color: #161616;  
+        padding-bottom: 60px;
+     
+    }
+    .vsi-fe3-my-navbarNav-footer-mobile-logo-img{
+        width: 16px;
+        height: 20px;
+        margin-right: 15px;
+    }
+    
+}
+@media (min-width: 767.98px) {
+    /* .vsi-fe3-menu-mobile{
+        display: none;
+    }
+    .vsi-fe3-logo-menu-mobile{
+        display: none;
+    }
+    #vsi-fe3-btn-menu{
+        display: none;
+    }
+    header{
+        display: block;
+    } */
+}
 
 /* End Navbar Mobile */
 
@@ -285,7 +370,13 @@
 
 
 /* CSS footer - start */
+.vsi-fe3-footer-position{
+    position: relative;
+}
 .vsi-fe3-my-footer__banner{
+    width: 100%;
+    position: absolute;
+    bottom: 95%;
     background-color: white;
     box-shadow:2px 2px 20px 5px #f5f5f5;
   
@@ -322,7 +413,7 @@
 
 @media (max-width: 767.98px){
     .vsi-fe3-footer__banner--item-content{
-       margin-left: 0;
+        margin-left: 0;
     } 
     .vsi-fe3-my-footer__banner{
         padding: 40px 30px;
@@ -333,15 +424,19 @@
     }
 
    .vsi-fe3-footer__banner--img{
-       display: none;
+        display: none;
    } 
    .vsi-fe3-my-footer__bottom .item-right a {
-    text-align: left;
-    display: block;
+        text-align: left;
+        display: block;
+    }
+    .vsi-fe3-my-footer__content--item img {
+        width: 45px;
+        height: 25px;
+        
     }
     
 }
-
 
 
 .vsi-fe3-my-footer__content--item-link{
@@ -380,7 +475,43 @@
 .vsi-fe3-my-footer__bottom {
     border-top:  1px solid #cacaca;
     padding-top: 20px;
+    /* position: absolute;
+    bottom: 0; */
 }
+.vsi-fe3-my-footer {
+    /* position: relative;
+    top: -130px; */
+    z-index: 99;
+}
+
+@media (max-width:991.98px) {
+    .vsi-fe3-footer__banner--item h2 {
+        font-size: 32px;
+        color: #000000;
+        text-align: left;
+    }
+    .vsi-fe3-footer__banner--item p {
+        font-size: 16px;
+        color: #000000;
+        text-align: left;
+    }
+}
+@media (min-width:991.98px){
+    .vsi-fe3-my-footer__banner--btn-left{
+        display: none;
+    }
+}
+@media (min-width:991.98px) and (max-width :1199.98px){
+.vsi-fe3-footer__banner--img{
+    width: 250px;
+}
+}
+@media(max-width :992.98px){
+    .vsi-fe3-my-footer__banner--btn-right{
+        display: none;
+    }
+}
+
 
 /* CSS footer - end */
 
@@ -1148,6 +1279,9 @@ lottie-player{
 /* CSS diffirent - end*/
 
 /* CSS solution - start */
+.vsi-fe3-our-solutions__content{
+    padding-bottom: 100px;
+}
 .vsi-fe3-our-solutions{
     background-color: var(--light-gray);
     clip-path: polygon(100% 0, 0 15% ,0 100%, 100% 100%);
@@ -1234,6 +1368,10 @@ lottie-player{
     /* max-width: 100%; */
     max-height: 100%;
     text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+  
 }
 
 .vsi-fe3-our-solutions__content-right--case{
@@ -1385,11 +1523,144 @@ lottie-player{
         right:  0%;
    }
 
+
 }
-.vsi-fe3-my-footer {
-    position: relative;
-    top: -130px;
-    z-index: 99;
+
+@media (min-width: 767.98px) and (max-width : 991.98px){
+    .vsi-fe3-our-solutions__left  .vsi-fe3-our-solutions__left-2{
+        width: 20px;
+        height: 50px;
+        background-color: var(--light-orange);
+        transform: skewY(-4deg) skewX(-4deg) ;
+        position: absolute;
+        top:-49px;
+        left: 0;
+        animation-name: animation-left-2;
+        animation-duration: 1s;
+    }
+
+    @keyframes animation-left-2 {
+        from {
+          width: 0;
+        } 
+        to {
+          width: 20px;
+        }
+      }
+    .vsi-fe3-our-solutions__left .vsi-fe3-our-solutions__left-1{
+        width: 30px;
+        height: 50px;
+        background-color: var(--brown);
+        transform: skewY(-3.8deg) ;
+        position: absolute;
+        top:-100px;
+        left: 0;
+        animation-name: animation-left-1;
+        animation-duration: 1s;
+    }
+    @keyframes animation-left-1 {
+        from {
+          width: 0;
+        } 
+        to {
+          width: 30px;
+        }
+    }
+    .vsi-fe3-our-solutions__right .vsi-fe3-our-solutions__right-1{
+        width: 85px;
+        height: 50px;
+        background-color:  var(--light-orange);
+        transform: skewY(-3.8deg) ;
+        position: absolute;
+        top:-250px;
+        right: 0px;
+        animation-name: animation-right-1;
+        animation-duration: 1s;
+    }
+    
+    .vsi-fe3-our-solutions__right  .vsi-fe3-our-solutions__right-2{
+        width: 100px;
+        height: 50px;
+        background-color:transparent;
+        transform: skewY(-3.8deg) ;
+        position: absolute;
+        top:-196px;
+        right: 0px;
+        border: 1px solid #adaddb;
+        animation-name: animation-right-2;
+        animation-duration: 1s;
+    }
+    
+    
+    @keyframes animation-right-1 {
+        from {
+          width: 0;
+        } 
+        to {
+          width: 85px;
+        }
+    }
+    
+    
+    
+      @keyframes animation-right-2 {
+        from {
+          width: 0;
+        } 
+        to {
+          width: 100px;
+        }
+    }
+    
+      
+      
+}
+
+@media (max-width: 575.98px) {
+    .vsi-fe3-our-solutions__right .vsi-fe3-our-solutions__right-1{
+        width: 85px;
+        height: 40px;
+        background-color:  var(--light-orange);
+        transform: skewY(-3.8deg) ;
+        position: absolute;
+        top:-235px;
+        right: 0px;
+        animation-name: animation-right-1;
+        animation-duration: 1s;
+    }
+    
+    .vsi-fe3-our-solutions__right  .vsi-fe3-our-solutions__right-2{
+        width: 100px;
+        height: 40px;
+        background-color:transparent;
+        transform: skewY(-3.8deg) ;
+        position: absolute;
+        top:-196px;
+        right: 0px;
+        border: 1px solid #adaddb;
+        animation-name: animation-right-2;
+        animation-duration: 1s;
+    }
+    
+    
+    @keyframes animation-right-1 {
+        from {
+          width: 0;
+        } 
+        to {
+          width: 85px;
+        }
+    }
+    
+    @keyframes animation-right-2 {
+        from {
+          width: 0;
+        } 
+        to {
+          width: 100px;
+        }
+    }
+
 }
 /* CSS solution - end*/
 
