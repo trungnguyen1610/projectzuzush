@@ -1,0 +1,215 @@
+.vsi-fe3-my-header{
+    padding: 30px 0;
+}
+.my-logo{
+    width: 65px;
+    height: auto;
+}
+
+/* Navbar PC - start */
+.vsi-fe3-my-navbar ul li a{
+    margin-left: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+   
+
+}
+.vsi-fe3-my-navbar ul li a:hover{
+    color: var(--orager);
+}
+.vsi-fe3-my-navbarNav{
+    text-align: right;
+    margin-left: 320px;
+    
+}
+.vsi-fe3-my-navbarNav ul{
+    align-items: center;
+}
+.vsi-fe3-li {
+   padding: 0 20px;
+   
+}
+.vsi-fe3-test{
+    background-color: var(--black);
+}
+.vsi-fe3-link{
+	width: 50px;
+} 
+.vsi-fe3-link img{
+	margin: 15px 15px;
+}
+
+.vsi-fe3-my-navbar-mobile{
+    
+    display: none;
+}
+/* Navbar PC - end */
+
+.vsi-fe3__header--animation {
+    animation-name: test;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+@keyframes test {
+    0%   { margin-top: 0px;}
+    100% { margin-top: -40px;}
+}
+
+/* Navbar Mobile */
+  @keyframes test-animate-menu-mobile{
+    0%   { margin-top: 0px;}
+    100% { margin-top: -40px;}
+ } 
+.vsi-fe3-animation-menu-mobile   {
+    animation-name: test-animate-menu-mobile;
+    animation-duration: 1s;
+    transform: translateY(50px);
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+@keyframes test-animate-menu-mobile-top{
+    from{
+        left:  -500px;
+    }
+    to{
+        left: 0px;
+    }
+    
+ } 
+
+
+.vsi-fe3-my-navbar-mobile-hide{
+    top: 0;
+    color: white;
+    background-color: black ;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    padding: 40px 60px;
+}
+
+.vsi-fe3-my-navbar-mobile-show{
+    display: block;
+    animation-name: test-animate-menu-mobile-top;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+   
+}
+
+
+@media (min-width: 991.98px) {
+    #test-button {
+    display: none;
+}
+}
+
+@media (max-width: 991.98px) {
+    
+    .vsi-fe3-my-navbarNav-mobile{
+       
+        position: absolute;
+        left: 0 ;
+    }
+    .vsi-fe3-my-navbar{
+        display: none;
+    }
+    .vsi-fe3-my-navbar-mobile{
+         display: block;
+         margin-right: 100px;
+         /* position: absolute;
+         left: 0; */
+    }
+    #vsi-fe3-btn-menu{
+        position: absolute;
+        right: -20% !important;
+    }
+    .vsi-fe3-my-navbar-mobile ul {
+        margin-left: 0px;
+        display: inline-block;
+    }
+    .vsi-fe3-my-navbar-mobile ul li {
+        text-align: left;
+    }
+    .vsi-fe3-my-navbar-mobile ul li a{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--black);
+    }
+    .vsi-fe3-my-navbar-mobile ul li a:hover{
+        color: var(--orager);
+    }
+    .vsi-fe3-my-navbarNav-mobile ul{
+        align-items: center;
+    }
+    
+    .vsi-fe3-my-navbar{
+        display: none;
+    }
+    .vsi-fe3-my-navbar-mobile{
+        display: block;
+         margin-right: 100px;
+    }
+    .vsi-fe3-my-navbar-mobile ul {
+        margin-left: 0px;
+        display: inline-block;
+       
+    }
+    .vsi-fe3-my-navbar-mobile ul li {
+        text-align: left;
+    }
+
+    .vsi-fe3-my-navbar-mobile ul li a{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--black);
+    
+    }
+    .vsi-fe3-my-navbar-mobile ul li a:hover{
+        color: var(--orager);
+    }
+    .vsi-fe3-my-navbarNav-mobile ul{
+        align-items: center;
+    }
+ }
+
+ 
+
+ .vsi-fe3-my-navbarNav-footer-mobile-lang{
+     position: absolute;
+     bottom: 0;
+     color: #8b8989;
+  
+ }
+ .vsi-fe3-my-navbarNav-footer-mobile-contact{
+    position: absolute;
+    bottom: 0;
+    color: #8b8989;
+    margin-left: 100px;
+   
+ }
+.vsi-fe3-my-navbarNav-footer-mobile-lang:hover{
+     text-decoration: none;
+     color: #8b8989;
+ }
+.vsi-fe3-my-navbarNav-footer-mobile-contact:hover{
+    text-decoration: none;
+    color: #8b8989;
+}
+
+.vsi-fe3-my-navbarNav-footer-mobile-logo{
+    position: absolute;
+     bottom: 2%;
+     right: 2%;
+}
+
+.vsi-fe3-my-navbarNav-footer-mobile-hide{
+    display: none;
+}
+.vsi-fe3-my-navbarNav-footer-mobile-show{
+    display: block;
+}
+
+/* End Navbar Mobile */

@@ -118,30 +118,11 @@ $hamburger1.on("click", function (e) {
     }, 10);
 });
 
-
-
-
 // js header - end
 
 // js footer - start 
 // js footer - end 
 
-// js banner - start
-var swiper = new Swiper('.swiper-container');
-// js banner - end
-
-// Difference - start
-$(document).ready(function ($) {
-    $(".tags a").hover(function () {
-        $(".tab-content").hide();
-        $(".tags a").removeClass('active');
-        $(this).addClass("active");
-        var selected_tab = $(this).attr("href");
-        $(selected_tab).show();
-        return false;
-    });
-});
-// Difference - end
 
 // Solution - start
 $(window).scroll(function () {
@@ -162,3 +143,22 @@ $(window).scroll(function () {
 });
 
  // Solution - end
+ 
+ /* vsi-fe1 - strat */
+ // js banner - start
+ var swiper = new Swiper('.swiper-container');
+ // js banner - end
+
+ // Difference - start
+ $(document).ready(function($) {
+	$(".tags a").hover(function() {
+		$(".tab-content").hide();
+		$(".tags a").removeClass('active');					
+		$(this).addClass("active");					
+        var selected_tab = $(this).attr("href");
+        $(selected_tab).show();
+		return false;
+	});
+});
+ // Difference - end
+ /* vsi-fe1 - end */
