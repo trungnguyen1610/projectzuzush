@@ -295,7 +295,7 @@ header{
     background-color: transparent;
     font-size: 25px;
     width: 40px;
-    top: 1%;
+    top: -8px;
     right: 3%;
     }
 }
@@ -305,7 +305,7 @@ header{
     background-color: transparent;
     font-size: 25px;
     width: 40px;
-    top: 1%;
+    top: -8px;
     right: 1%;
     }
 }
@@ -315,8 +315,8 @@ header{
     background-color: transparent;
     font-size: 25px;
     width: 40px;
-    top: 1%;
-    right: 5%;
+    top: -8px;
+    right: 25px;
     }
 }
 @media (max-width: 991.98px) {
