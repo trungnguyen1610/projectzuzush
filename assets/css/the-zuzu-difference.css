@@ -316,7 +316,131 @@
     margin: 0 auto;
 }
 /* CSS Within start */
-
+.vsi-fe1-rec-dif-left{
+    position: relative;
+    top: 123px;
+    z-index: 9;
+    left: 0;
+}
+.vsi-fe1-border-dif-left{
+    -webkit-transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-5deg) scaleX(1);
+    width: 0px;
+    margin-left: 135px;
+    margin-bottom: 12px;
+    position: absolute;
+    border: 1px solid #adaddb;
+    background-color: transparent;
+    padding: 0;
+    bottom: 4px;
+    left: 0;
+    -webkit-animation-name: border-dif-left; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: border-dif-left;
+    animation-duration: 1s;
+    -webkit-transition: 1.5s all ease-out;
+    transition: 1.5s all ease-out;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes border-dif-left {
+    from {width: 0px;}
+    to {width:190px;}
+}
+/* Standard syntax */
+@keyframes border-dif-left {
+    from {width: 0px;}
+    to {width:190px;}
+}
+.vsi-fe1-grey-dif-left{
+    background-color: #e7ebf1;
+    width: 0px;
+    -webkit-transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-5deg) scaleX(1);
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    -webkit-animation-name: grey-dif-left; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: grey-dif-left;
+    animation-duration: 1s;
+    -webkit-transition: 1.5s all ease-out;
+    transition: 1.5s all ease-out;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes grey-dif-left {
+    from {width: 0px;}
+    to {width:135px;}
+}
+/* Standard syntax */
+@keyframes grey-dif-left {
+    from {width: 0px;}
+    to {width:135px;}
+}
+.vsi-fe1-rec-dif-right{
+    position: relative;
+    top: 59px;
+    right: 0;
+    z-index: 9;
+}
+.vsi-fe1-purple-dark-right{
+    width: 0px;
+    background-color: #7676c1;
+    -webkit-transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-5deg) scaleX(1);
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    bottom: 10px;
+    -webkit-animation-name: purple-dark-right; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: purple-dark-right;
+    animation-duration: 1s;
+    -webkit-transition: 1.5s all ease-out;
+    transition: 1.5s all ease-out;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes purple-dark-right {
+    from {width: 0px;}
+    to {width:268px;}
+}
+/* Standard syntax */
+@keyframes purple-dark-right {
+    from {width: 0px;}
+    to {width:268px;}
+}
+.vsi-fe1-purple-border-dif-right{
+    width: 0px;
+    border: 1px solid #adaddb;
+    background-color: transparent;
+    -webkit-transform: skewY(-5deg) scaleX(1);
+    transform: skewY(-5deg) scaleX(1);
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: -10px;
+    right: 0;
+    -webkit-animation-name: purple-border-dif-right; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: purple-border-dif-right;
+    animation-duration: 1s;
+    -webkit-transition: 1.5s all ease-out;
+    transition: 1.5s all ease-out;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes purple-border-dif-right {
+    from {width: 0px;}
+    to {width:144px;}
+}
+/* Standard syntax */
+@keyframes purple-border-dif-right {
+    from {width: 0px;}
+    to {width:144px;}
+}
 .vsi-fe1-within{
     width: 100%;
     max-width: 100%;
@@ -436,6 +560,98 @@
     margin: 0 auto;
 }
 /* CSS Within end */
+.vsi-fe1-combination{
+    width: 100%;
+    max-width: 100%;
+    background-image: unset;
+    margin: 0;
+    position: relative;
+    padding: 90px 0 300px;
+}
+.vsi-fe1-text-combination{
+    width: 100%;
+    max-width: 100%;
+    padding-left: 90px;
+    margin: 0;
+    height: auto;
+}
+.vsi-fe1-h3-combination{
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+    font-family: 'Nunito Sans';
+    padding: 0;
+    color: var(--color);
+    font-weight: bold;
+    text-align: left;
+
+
+}
+.vsi-fe1-chat{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;  
+}
+.vsi-fe1-person{
+    padding: 0;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+}
+.vsi-fe1-person img{
+    width: 100%;
+    height: 100%;
+}
+.vsi-fe1-span-combination{
+    color: #f26f31;
+}
+.vsi-fe1-p-combination{
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-family: 'Nunito Sans';
+    font-weight: normal;
+}
+.vsi-fe1-info-chat{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+.vsi-fe1-hover-combination{
+    margin-top: 40px;
+    display: block;
+    color: #f26f31;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    right: 0;
+    font-weight: 500;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    position: relative;
+    max-width: 145px;
+}
+.vsi-fe1-hover-combination:hover{
+    transition: 0.3s all ease;
+    
+}
+.vsi-fe1-hover-combination:hover .fa-arrow-right{
+    right: 5px;
+    position: absolute;
+    transition: 0.3s all ease;
+}
+a:hover {
+    color: #f26f31;
+    text-decoration: none;
+}
 
 @media (max-width: 575.98px) { 
     .vsi-fe1-h1-text{
@@ -562,6 +778,85 @@
     .vsi-fe1-clip-path{
         -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 0% 100%)
+    }
+    .vsi-fe1-clip-path-within{
+        -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+        clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    }
+    .vsi-fe1-step{
+        margin-bottom: 20px;
+    }
+    .vsi-fe1-rec-dif-left{
+        display: none;
+    }
+    .vsi-fe1-purple-dark-right{
+        width: 126px;
+        background-color: #7676c1;
+        -webkit-transform: skewY(-6.8deg) scaleX(1);
+        transform: skewY(-6.8deg) scaleX(1);
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        right: 0;
+        bottom: 10px;
+        -webkit-animation-name: purple-dark-right-mbl; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: purple-dark-right-mbl;
+        animation-duration: 1s;
+        -webkit-transition: 1.5s all ease-out;
+        transition: 1.5s all ease-out;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes purple-dark-right-mbl {
+        from {width: 0px;}
+        to {width:126px;}
+    }
+    /* Standard syntax */
+    @keyframes purple-dark-right-mbl {
+        from {width: 0px;}
+        to {width:126px;}
+    }
+    .vsi-fe1-purple-border-dif-right{
+        width: 42px;
+        border: 1px solid #adaddb;
+        background-color: transparent;
+        -webkit-transform: skewY(-6.8deg) scaleX(1);
+        transform: skewY(-6.8deg) scaleX(1);
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top: -10px;
+        right: 0;
+        -webkit-animation-name:purple-border-dif-right-mbl; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: purple-border-dif-right-mbl;
+        animation-duration: 1s;
+        -webkit-transition: 1.5s all ease-out;
+        transition: 1.5s all ease-out;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes purple-border-dif-right-mbl {
+        from {width: 0px;}
+        to {width:42px;}
+    }
+    /* Standard syntax */
+    @keyframes purple-border-dif-right-mbl {
+        from {width: 0px;}
+        to {width:42px;}
+    }
+    .vsi-fe1-chat{
+        display: none;
+    }
+    .vsi-fe1-text-combination{
+        padding: 0px !important;
+    }
+    .vsi-fe1-box-within{
+        padding: 90px 0 44px;
+    }
+    .vsi-fe1-combination{
+        padding: 132px 0 300px;
     }
 
  }
@@ -692,9 +987,86 @@
         -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 0% 100%)
     }
-
+    .vsi-fe1-clip-path-within{
+        -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    }
+    .vsi-fe1-purple-dark-right{
+        width: 126px;
+        background-color: #7676c1;
+        -webkit-transform: skewY(-6.8deg) scaleX(1);
+        transform: skewY(-6.8deg) scaleX(1);
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        right: 0;
+        bottom: 10px;
+        -webkit-animation-name: purple-dark-right-mbl; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: purple-dark-right-mbl;
+        animation-duration: 1s;
+        -webkit-transition: 1.5s all ease-out;
+        transition: 1.5s all ease-out;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes purple-dark-right-mbl {
+        from {width: 0px;}
+        to {width:126px;}
+    }
+    /* Standard syntax */
+    @keyframes purple-dark-right-mbl {
+        from {width: 0px;}
+        to {width:126px;}
+    }
+    .vsi-fe1-purple-border-dif-right{
+        width: 42px;
+        border: 1px solid #adaddb;
+        background-color: transparent;
+        -webkit-transform: skewY(-6.8deg) scaleX(1);
+        transform: skewY(-6.8deg) scaleX(1);
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top: -10px;
+        right: 0;
+        -webkit-animation-name:purple-border-dif-right-mbl; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: purple-border-dif-right-mbl;
+        animation-duration: 1s;
+        -webkit-transition: 1.5s all ease-out;
+        transition: 1.5s all ease-out;
+        animation-fill-mode: forwards;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes purple-border-dif-right-mbl {
+        from {width: 0px;}
+        to {width:42px;}
+    }
+    /* Standard syntax */
+    @keyframes purple-border-dif-right-mbl {
+        from {width: 0px;}
+        to {width:42px;}
+    }
+    .vsi-fe1-step{
+        margin-bottom: 20px;
+    }
+    .vsi-fe1-rec-dif-left{
+        display: none;
+    }
+    .vsi-fe1-chat{
+        display: none;
+    }
+    .vsi-fe1-text-combination{
+        padding: 0px !important;
+    }
+    .vsi-fe1-box-within{
+        padding: 90px 0 44px;
+    }
+    .vsi-fe1-combination{
+        padding: 132px 0 300px;
+    }
  }
-
 @media (min-width: 768px) and (max-width: 991.98px) { 
     
  }
