@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap&subset=vietnamese');
-=======
 
 
->>>>>>> vsi-fe3
 
 *{
     padding: 0;
@@ -19,10 +15,6 @@ body{
     color: var(--black);
     font-weight: 400;
     font-size: 1rem;
-<<<<<<< HEAD
-}
-=======
     overflow-x: hidden;
     position: relative;
 }
->>>>>>> vsi-fe3
