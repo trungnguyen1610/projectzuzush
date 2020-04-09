@@ -8,5 +8,9 @@
 @import "../lib/aos.css";
 @import "../lib/swiper.min.css";
 @import "../lib/animate.css" ;
+<<<<<<< HEAD
+=======
+@import "../lib/hamburgers.css" ;
+>>>>>>> vsi-fe3
 
 @import "style.css";

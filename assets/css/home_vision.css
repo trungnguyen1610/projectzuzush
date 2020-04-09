@@ -12,7 +12,11 @@
      
 }
 .vsi-fe2-ourVision-cover{
+<<<<<<< HEAD
 transition: 0.7s all ease-out;
+=======
+transition: .7s all ease-out;
+>>>>>>> vsi-fe3
 position: absolute;
 top: 0;
 left: 0;
@@ -70,9 +74,12 @@ bottom: 0;
     right: 0;
     bottom: 50px;
   }
+<<<<<<< HEAD
    .run1{
     width: 162px !important;
   }
+=======
+>>>>>>> vsi-fe3
   .rec.orange {
     background-color: var(--orange);
     width: 0px;
@@ -80,12 +87,27 @@ bottom: 0;
     animation-duration: 1s;
   
   }
+<<<<<<< HEAD
   @keyframes example {
     from {
 		width: 0px;
     }
     to {
 		width: 162px;
+=======
+  .run1{
+    width: 162px !important;
+  }
+  @keyframes example {
+    from {
+      width: 0;
+      
+     
+    }
+    to {
+      
+      width: 162px;
+>>>>>>> vsi-fe3
     }
   }
   .rec.brown {
@@ -94,6 +116,12 @@ bottom: 0;
     animation-name: example1;
     animation-duration: 1s;
   }
+<<<<<<< HEAD
+=======
+  .run2{
+    width: 320px !important;
+  }
+>>>>>>> vsi-fe3
   @keyframes example1 {
     from {
       width: 0;
@@ -105,6 +133,7 @@ bottom: 0;
       width: 320px;
     }
   }
+<<<<<<< HEAD
 .run2{
     width: 320px !important;
 }
@@ -124,6 +153,25 @@ Extra small devices (phones, less than 768px)
 No media query since this is the default in Bootstrap
 Small devices (tablets, 768px and up)
 ******************************************************/
+=======
+  .rec-animate {
+    transform: skewY(-5deg) scaleX(1);
+  }
+  .rec {
+    height: 50px;
+    margin-left: auto;
+  }
+  .vsi-fe2-ourVision-wrap{
+    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 90%);
+    
+
+     
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+>>>>>>> vsi-fe3
 
 @media (max-width: 575.98px) { 
     .vsi-fe2-ourVision-wrap-image img{
@@ -143,8 +191,13 @@ Small devices (tablets, 768px and up)
         font-weight: bold;
     }
     .lottie-icon svg{
+<<<<<<< HEAD
 		width: 50% !important;
 		height: 50%  !important;
+=======
+    width: 50% !important;
+    height: 50%  !important;
+>>>>>>> vsi-fe3
    }
    .img-rec{
        right: 0;
