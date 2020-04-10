@@ -20,10 +20,10 @@ header{
 
     padding: 30px 0;
 }
-.my-logo{
+/* .my-logo{
     width: 65px;
     height: auto;
-}
+} */
 
 /* Navbar PC - start */
 .vsi-fe3-my-navbar ul li a{
@@ -122,7 +122,13 @@ header{
 
 
 @media (min-width: 991.98px) {
-   
+    .vsi-fe3-menu-mobile.vsi-fe3-menu-mobile--hide{
+        display: none;
+    }
+   .vsi-fe3-my-navbar-logo-link{
+    width: 65px;
+    height: 60px;
+   }
     #test-button {
     display: none;
     }
@@ -660,11 +666,10 @@ header{
     color: var(--white);
     padding: 0;
     margin-bottom: 18px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 48px;
     line-height: 58px;
-    color: var(--orange);
-
+    color: #f26f31;
 }
 .vsi-fe1-banner .vsi-fe1-text span{
     padding: 0;
@@ -735,8 +740,21 @@ header{
         max-width: 100%;
     }
     .vsi-fe1-banner .vsi-fe1-text h1{
-        line-height: 37px !important;
-        font-size: 32px
+        line-height: 38px !important;
+        font-size: 29px;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        word-break: break-all;
+        margin-bottom: 18px;
+    }
+    .vsi-fe1-banner .vsi-fe1-text p{
+        color: var(--white);
+        margin-bottom: 25px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
     }
     .vsi-fe1-banner .vsi-fe1-text{
         left: 0 !important;
@@ -748,6 +766,13 @@ header{
         padding-bottom: 78px !important;
         height: 0px !important;
     }
+    .vsi-fe1-block-mbl{
+        display: block !important;
+    }
+    .vsi-fe1-block-ipad{
+        display: inline-block !important;
+    }
+
 
 }
 
@@ -774,28 +799,95 @@ header{
     }
     .vsi-fe1-banner .vsi-fe1-text{
         left: 0 !important;
-        padding: 0px  20px !important;
-        transform: translateY(8%);
+        padding: 0px !important;
+        transform: translateY(20%);
     }
     .vsi-fe1-banner .vsi-fe1-clip-path{
         transform: rotate(360deg) !important;
         padding-bottom: 78px !important;
         height: 0px !important;
     }
+    .vsi-fe1-banner .vsi-fe1-text h1 {
+        line-height: 38px !important;
+        font-size: 29px;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        word-break: break-all;
+        margin-bottom: 18px;
+    }
+    .vsi-fe1-block-mbl{
+        display: block !important;
+    }
+    .vsi-fe1-block-mbl{
+        display: inline-block !important;
+    }
+    .vsi-fe1-block-ipad-all{
+        display: block !important;
+    }
+    
+    
+
+
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .vsi-fe1-block-mbl{
+        display: inline-block !important;
+    }
+    .vsi-fe1-block-mbl, .vsi-fe1-block-ipad{
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .vsi-fe1-banner .vsi-fe1-text{
+        height: auto;
+        padding: 0;
+        margin: 0;
+        z-index: 9;
+        max-width: 555px;
+        position: absolute;
+        top: calc(13% - 20px);
+        left: 90px;
+        -webkit-transform: translateY(50%);
+        transform: translateY(20%);
+    }
+
+}
+@media (min-width: 992px){
+    .vsi-fe1-block-mbl{
+        display: inline-block !important;
+    }
+    .vsi-fe1-block-mbl, .vsi-fe1-block-ipad{
+        display: inline-block !important;
+    }
+}
+@media (min-width: 1200px) { 
+    .vsi-fe1-banner .vsi-fe1-text{
+        height: auto;
+        padding: 0;
+        margin: 0;
+        z-index: 9;
+        max-width: 555px;
+        position: absolute;
+        top: calc(13% - 20px);
+        left: 90px;
+        -webkit-transform: translateY(50%);
+        transform: translateY(20%);
+    }
+    .vsi-fe1-block-mbl, .vsi-fe1-block-ipad{
+        display: inline-block !important;
+    }
 
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-}
 /* CSS banner - end */
 
 /* CSS vision - start */
 .vsi-fe2-ourVision{
     position: relative;
+    font-family: 'Lato', sans-serif;
 }
 .vsi-fe2-ourVision-wrap{
     background-color: var(--light-gray);
@@ -837,22 +929,23 @@ height: 100%;
 }
 
 .vsi-fe2-ourVision__title{
-    position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 12px;
     color: #161616;
-    font-family: nb;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
     padding-bottom: 18px;
     position: relative;
     margin-bottom: 23px;
 }
 .vsi-fe2-ourVision-right-box h3{
     max-width: 475px;
+    font-weight: bold;
 }
 .vsi-fe2-ourVision__title.line::before{
     position: absolute;
-bottom: 0;
+    bottom: 0;
     content: "";
     height: 1px;
     width: 40px;
@@ -863,7 +956,7 @@ bottom: 0;
 .text-center {
     text-align: center!important;
     position: relative;
-    top: -137px;
+    top: -133px;
 }
 /*Bar orange and brown */
 .img-rec {
@@ -872,46 +965,26 @@ bottom: 0;
     bottom: 40px;
     /* bottom: 0; */
   }
-  .rec.orange {
-    background-color: var(--orange);
-    width: 0px;
+  .rec.orange.run1{
+    background-color: var(--light-orange);
+    width: 162px;
     animation-name: example;
-    animation-duration: 1s;
-  
+    animation-duration: 2s;
   }
-  .run1{
-    width: 162px !important;
-  }
+ 
   @keyframes example {
-    from {
-      width: 0;
-      
-     
-    }
-    to {
-      
-      width: 162px;
-    }
+    from { width: 0;}
+    to {width: 162px; }
   }
-  .rec.brown {
+  .rec.brown.run2{
     background-color: var(--brown);
-    width: 0px;
+    width: 320px;
     animation-name: example1;
-    animation-duration: 1s;
-  }
-  .run2{
-    width: 320px !important;
+    animation-duration: 2s;
   }
   @keyframes example1 {
-    from {
-      width: 0;
-      
-     
-    } 
-    to {
-      
-      width: 320px;
-    }
+    from {width: 0;} 
+    to {width: 320px;}
   }
   .rec-animate {
     transform: skewY(-5deg) scaleX(1);
@@ -920,9 +993,7 @@ bottom: 0;
     height: 50px;
     margin-left: auto;
   }
-  .vsi-fe2-ourVision-wrap{
-    /* clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 90%); */
-}
+ 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -932,79 +1003,131 @@ bottom: 0;
     .vsi-fe2-ourVision-wrap-image img{
         display: none;
     }
-    .run1{
-        width: 50px !important;
+    .rec.orange.run1{
+        background-color: var(--light-orange);
+        width: 50px;
+        animation-name: example;
+        animation-duration: 2s;
+        height: 40px !important;
+      }
+     
+      @keyframes example {
+        from { width: 0;}
+        to {width: 50px; }
+      }
+      .rec.brown.run2{
+        background-color: var(--brown);
+        width: 140px;
+        animation-name: example1;
+        animation-duration: 2s;
         height: 40px;
-    }
-    .run2{
-        width: 160px !important;
-        height: 40px;
-    }
-    .vsi-fe2-ourVision__title h3{
-        width: 40%;
+      }
+      @keyframes example1 {
+        from {width: 0;} 
+        to {width: 140px;}
+      } 
+      .vsi-fe2-ourVision-right-box h3{
+        width: 80%;
         margin: 0 auto;
-        font-weight: bold;
+        font-weight: 700;
     }
     .lottie-icon svg{
     width: 50% !important;
     height: 50%  !important;
-   }
+    }
    .img-rec {
         right: 0px;
-        bottom: 35px;
+        bottom: 55px;
         transform: rotate(0deg);
     }
    .eye-image{
        width: 40% !important;
        height: 40% !important;
        max-width: 40% !important;
-   }
+    }
    .text-center{
-        top: -109px !important;
-   }
+    top: -50px !important;
+     }
    .rec-animate {
         transform: skewY(-5deg) scaleX(1);
     }
-
-
+    .vsi-fe2-ourVision__title {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 500;
+        letter-spacing: 5px;
+        font-size: 12px;
+        padding-bottom: 18px;
+        position: relative;
+        margin-bottom: 23px;
+    }
+    .vsi-fe2-ourVision-wrap{
+        clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 90%);
+    }
+    .vsi-fe2-ourVision-wrap {
+    padding: 150px 0 130px;
+    }
  }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .vsi-fe2-ourVision-wrap-image img{
         display: none;
     }
-    .run1{
-        width: 50px !important;
-        height: 50px;
-    }
-    .run2{
-        width: 160px !important;
-        height: 50px;
-    }
+   
+    .rec.orange.run1{
+        background-color: var(--light-orange);
+        width: 70px;
+        animation-name: example;
+        animation-duration: 2s;
+        height: 40px !important;
+      }
+     
+      @keyframes example {
+        from { width: 0;}
+        to {width: 70px; }
+      }
+      .rec.brown.run2{
+        background-color: var(--brown);
+        width: 158px;
+        animation-name: example1;
+        animation-duration: 2s;
+        height: 40px;
+      }
+      @keyframes example1 {
+        from {width: 0;} 
+        to {width: 158px;}
+      }
     .vsi-fe2-ourVision-right-box h3{
-        width: 60%;
+        width: 55%;
         margin: 0 auto;
-        font-weight: bold;
+        font-weight: 700;
     }
     .img-rec {
         right: 0px;
-        bottom: 35px;
-        transform: rotate(0deg);
+        bottom: 60px;
     }
        .eye-image{
-        width: 40% !important;
-        height: 40% !important;
-        max-width: 40% !important;
+        width: 34% !important;
+        height: 34% !important;
+        max-width: 34% !important;
     }
     .rec-animate {
-        transform: skewY(-2deg) scaleX(1);
-      }
-      .text-center{
+        transform:skewY(-2.3deg) scaleX(1);
+    }
+     .text-center{
         top: -109px !important;
        }
-       .rec-animate {
-            transform: skewY(-5deg) scaleX(1);
+     .vsi-fe2-ourVision__title {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 500;
+            letter-spacing: 5px;
+            font-size: 12px;
+            padding-bottom: 18px;
+            position: relative;
+            margin-bottom: 23px;
         }
+    .vsi-fe2-ourVision-wrap{
+            clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 90%);
+     }
  }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -1024,6 +1147,7 @@ bottom: 0;
 @media (min-width: 1200px) { 
     
  }
+
 /* CSS vision - end */
 
 /* CSS diffirent - start */
@@ -1276,6 +1400,9 @@ lottie-player{
 .show{
     display: block !important;
 }
+.vsi-fe1-hover-mbl-ipad{
+    display: none;
+}
 @media (max-width: 575.98px) { 
     .vsi-fe1-show{
         display: none !important;
@@ -1307,7 +1434,36 @@ lottie-player{
         font-size: 16px;
         text-align: left;
         font-weight: normal;
-        color: var(--brown);
+        color: var(--black);
+    }
+    a:hover{
+        color: #f26f31;
+        text-decoration: none;
+    }
+    .vsi-fe1-hover-mbl-ipad{
+        text-align: left;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        color: #f26f31;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.5s linear;
+        display: block !important;
+    }
+    .vsi-fe1-hover-mbl-ipad:hover .svg-inline--fa{
+        font-size: 10px;
+        right: -20px;
+        bottom: 6px;
+        transition: all 0.5s linear;
+        
+    }
+    .svg-inline--fa {
+        overflow: visible;
+        bottom: 6px;
+        margin-left: 5px;
+        font-size: 10px;
+        
     }
  }
 
@@ -1331,6 +1487,49 @@ lottie-player{
     }
     .vsi-fe1-text-mb-ip{
         display: block !important;
+        color: var(--black);
+        padding: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .vsi-fe1-desd{
+        display: block;
+        font-size: 16px;
+        text-align: left;
+        font-weight: normal;
+        color: var(--black);
+    }
+    a:hover{
+        color: #f26f31;
+        text-decoration: none;
+    }
+    .vsi-fe1-hover-mbl-ipad{
+        text-align: left;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        color: #f26f31;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.5s linear;
+        display: block !important;
+    }
+    .vsi-fe1-hover-mbl-ipad:hover .svg-inline--fa{
+        font-size: 10px;
+        right: -20px;
+        bottom: 6px;
+        transition: all 0.5s linear;
+        
+    }
+    .svg-inline--fa {
+        overflow: visible;
+        bottom: 6px;
+        margin-left: 5px;
+        font-size: 10px;
+        
     }
  }
 
@@ -1345,6 +1544,7 @@ lottie-player{
 @media (min-width: 1200px) { 
     
  }
+
 /* CSS diffirent - end*/
 
 /* CSS solution - start */
@@ -1572,6 +1772,8 @@ lottie-player{
     }  
     .vsi-fe3-our-solutions__content-right-mobile{
         display: block;
+        z-index: 9999999999999;
+        margin-top: 20px;
     }
     .vsi-fe3-our-solutions{
         background-color: var(--light-gray);

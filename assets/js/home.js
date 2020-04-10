@@ -37,13 +37,13 @@ $(window).scroll(function (event) {
         if (!$(".vsi-fe3-header-mobile-animation").hasClass("vsi-fe3-header-mobile-animation-hide")) {
             $(".vsi-fe3-header-mobile-animation").addClass("vsi-fe3-header-mobile-animation-hide");
             $(".vsi-fe3-header-mobile-animation").removeClass("vsi-fe3-header-mobile-animation-show");
-            console.log("down")
+            
         }
     } else {
         if (!$(".vsi-fe3-header-mobile-animation").hasClass("vsi-fe3-header-mobile-animation-show")) {
             $(".vsi-fe3-header-mobile-animation").removeClass("vsi-fe3-header-mobile-animation-hide");
             $(".vsi-fe3-header-mobile-animation").addClass("vsi-fe3-header-mobile-animation-show");
-            console.log("up")
+           
         }
     }
     lastScrollTopMB = st;
@@ -88,7 +88,6 @@ $("#vsi-fe3-btn-menu").click(function () {
 
 
 $("#vsi-fe3-btn-menu").click(function () {
-    console.log("a");
     if (!$(".vsi-fe3-menu-mobile--hide").hasClass("vsi-fe3-menu-mobile--show")) {
         $(".vsi-fe3-menu-mobile--hide").addClass("vsi-fe3-menu-mobile--show");
         $(".vsi-fe3-header-mobile-animation").removeClass("vsi-fe3-header-mobile-animation-show");
@@ -162,3 +161,18 @@ $(window).scroll(function () {
 });
 
  // Solution - end
+
+
+  /* Vision fe2 -start */
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $(".rec.orange").addClass("run1");
+    } 
+    if (scroll >= 500) {
+      $(".rec.brown").addClass("run2");
+    }
+});
+
+/*vision fe2 -end */
