@@ -37,13 +37,13 @@ $(window).scroll(function (event) {
         if (!$(".vsi-fe3-header-mobile-animation").hasClass("vsi-fe3-header-mobile-animation-hide")) {
             $(".vsi-fe3-header-mobile-animation").addClass("vsi-fe3-header-mobile-animation-hide");
             $(".vsi-fe3-header-mobile-animation").removeClass("vsi-fe3-header-mobile-animation-show");
-            console.log("down")
+            
         }
     } else {
         if (!$(".vsi-fe3-header-mobile-animation").hasClass("vsi-fe3-header-mobile-animation-show")) {
             $(".vsi-fe3-header-mobile-animation").removeClass("vsi-fe3-header-mobile-animation-hide");
             $(".vsi-fe3-header-mobile-animation").addClass("vsi-fe3-header-mobile-animation-show");
-            console.log("up")
+           
         }
     }
     lastScrollTopMB = st;
@@ -88,7 +88,6 @@ $("#vsi-fe3-btn-menu").click(function () {
 
 
 $("#vsi-fe3-btn-menu").click(function () {
-    console.log("a");
     if (!$(".vsi-fe3-menu-mobile--hide").hasClass("vsi-fe3-menu-mobile--show")) {
         $(".vsi-fe3-menu-mobile--hide").addClass("vsi-fe3-menu-mobile--show");
         $(".vsi-fe3-header-mobile-animation").removeClass("vsi-fe3-header-mobile-animation-show");
@@ -118,11 +117,30 @@ $hamburger1.on("click", function (e) {
     }, 10);
 });
 
+
+
+
 // js header - end
 
 // js footer - start 
 // js footer - end 
 
+// js banner - start
+var swiper = new Swiper('.swiper-container');
+// js banner - end
+
+// Difference - start
+$(document).ready(function ($) {
+    $(".tags a").hover(function () {
+        $(".tab-content").hide();
+        $(".tags a").removeClass('active');
+        $(this).addClass("active");
+        var selected_tab = $(this).attr("href");
+        $(selected_tab).show();
+        return false;
+    });
+});
+// Difference - end
 
 // Solution - start
 $(window).scroll(function () {
@@ -143,22 +161,18 @@ $(window).scroll(function () {
 });
 
  // Solution - end
- 
- /* vsi-fe1 - strat */
- // js banner - start
- var swiper = new Swiper('.swiper-container');
- // js banner - end
 
- // Difference - start
- $(document).ready(function($) {
-	$(".tags a").hover(function() {
-		$(".tab-content").hide();
-		$(".tags a").removeClass('active');					
-		$(this).addClass("active");					
-        var selected_tab = $(this).attr("href");
-        $(selected_tab).show();
-		return false;
-	});
+
+  /* Vision fe2 -start */
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $(".rec.orange").addClass("run1");
+    } 
+    if (scroll >= 500) {
+      $(".rec.brown").addClass("run2");
+    }
 });
- // Difference - end
- /* vsi-fe1 - end */
+
+/*vision fe2 -end */
