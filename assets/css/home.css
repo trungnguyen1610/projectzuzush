@@ -1,10 +1,178 @@
-/* CSS heder - start */
-header{
-    z-index: 99;
-    position: fixed;
-    top: 0;
+.vsi-header__empty{
+    height: 80px;
     width: 100%;
+}
+/* Header PC  START*/
+.vsi-header__menu-item{
+    position: relative;
+    height: 90%;
+    /* display: none; */
+}
+.vsi-my-header{
+    box-shadow: none;
+    border: 1px solid white;
+   
+}
+
+
+.vsi-header__menu-item a{
+   
+    color: black;
+}
+.vsi-my-header-menu{
     background-color: white;
+    min-height: 80px;
+}
+.vsi-header-logo{
+    width: 65px;
+    height: 60px;
+}
+/* Header PC END */
+
+/* Header MB START */
+.vsi-my-navbarNav-footer-mobile
+{
+    position: absolute;
+    bottom: 4%;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    display: none;
+}
+
+.vsi-my-navbarNav-footer-mobile-lang{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    margin-right: 20px;
+}
+.vsi-my-navbarNav-footer-mobile-contact{
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+}
+.vsi-my-navbarNav-footer-mobile-logo{
+    position: absolute;
+    bottom: 5%;
+    right:  5%;
+}
+.vsi-my-navbarNav-footer-mobile-show{
+    display: block;
+}
+.vsi-header__menu-list{
+    height: 90%;
+}
+.vsi-header__menu-list a:hover{
+    text-decoration: none;
+    /* background-color: white; */
+}
+
+@keyframes vsi-header__menu-item-animation{
+    0%   { 
+        margin-top: 100px;
+    }
+    100% { 
+        margin-top: 0px;
+    
+    }
+ } 
+.vsi-header__menu-item-show   {
+    animation-name: vsi-header__menu-item-animation;
+    animation-duration: 1s;
+    display: block;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    
+}
+.vsi-header__menu-item-opacity-show{
+    animation-name:  vsi-header__menu-item-opacity-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+@keyframes vsi-header__menu-item-opacity-animation{
+    0%   { 
+       opacity: 0; 
+    }
+    50% {
+        opacity: 0;
+    }
+    100% { 
+      
+       opacity: 1;    
+    }
+}
+
+.vsi-header_menu-test{
+    display: none;
+}
+
+.vsi-header_menu-test img{
+    margin: 0 20px;
+}
+
+@keyframes vsi-header_menu-test-animation{
+    0%   { margin-bottom: -50px;}
+    100% { margin-bottom: 50px;}
+ } 
+.vsi-header_menu-test-show   {
+    display:inline-block ;
+    animation-name:vsi-header_menu-test-animation;
+    animation-duration: 1s;
+    /* transform: translateY(50px); */
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+
+.vsi-my-navbarNav-footer-mobile-content{
+    padding: 0 20px;
+ 
+}
+.vsi-header__menu-btn-mb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    color: white;
+    background-color: black ;
+    padding: 30px 15px;
+    display: none;
+}
+
+
+.vsi-header__menu-btn-mb-show{
+    display: block;
+    animation-name: vsi-header__menu-btn-mb-animation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes vsi-header__menu-btn-mb-animation{
+    from{
+        left:  -500px;
+    }
+    to{
+        left: 0px;
+    }
+ } 
+
+ .vsi-my-header-menu{
+     padding: 10px 0;
+ }
+
+.vsi-my-navbarNav-footer-mobile a {
+    color: black;
+}
+.vsi-header__menu-list a {
+    color: black;
+}
+.luxbar-menu-material-cyan .active, .luxbar-menu-material-cyan .luxbar-item:hover {
+    background-color: white;
+}
+.vsi-header__menu-item li a:hover{
+    color: #f26f31;
 }
 
 .vsi-fe3-header-animation-hide{
@@ -13,444 +181,108 @@ header{
 .vsi-fe3-header-animation-show{
     display: block;
 }
-
-.vsi-fe3-my-header{
-    
-
-    padding: 30px 0;
+.vsi-my-header__content{
+    padding: 0;
+    background-color: white;
 }
-/* .my-logo{
-    width: 65px;
-    height: auto;
-} */
-
-/* Navbar PC - start */
-.vsi-fe3-my-navbar ul li a{
-    margin-left: 35px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #161616;
-   
-
+.luxbar-menu-material-cyan .luxbar-hamburger span, .luxbar-menu-material-cyan .luxbar-hamburger span::before, .luxbar-menu-material-cyan .luxbar-hamburger span::after {
+    background-color: black;
 }
-.vsi-fe3-my-navbar ul li a:hover{
-    color: var(--orager);
-}
-.vsi-fe3-my-navbarNav{
-    text-align: right;
-    margin-left: 320px;
-    
-}
-.vsi-fe3-my-navbarNav ul{
-    align-items: center;
-}
-.vsi-fe3-li {
-   padding: 0 20px;
-   
-}
-.vsi-fe3-test{
-    background-color: var(--black);
-}
-.vsi-fe3-link{
-	width: 50px;
-} 
-.vsi-fe3-link img{
-	margin: 15px 15px;
-}
-
-.vsi-fe3-my-navbar-mobile{
-    
-    display: none;
-}
-/* Navbar PC - end */
-
-.vsi-fe3__header--animation {
-    animation-name: test;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode:forwards;
-}
-@keyframes test {
-    0%   { margin-top: 0px;}
-    100% { margin-top: -40px;}
-}
-
-/* Navbar Mobile */
-  @keyframes test-animate-menu-mobile{
-    0%   { margin-top: 100px;}
-    100% { margin-top: 40px;}
- } 
-.vsi-fe3-animation-menu-mobile   {
-    animation-name: test-animate-menu-mobile;
-    animation-duration: 1s;
-    transform: translateY(50px);
-    animation-iteration-count: 1;
-    animation-fill-mode:forwards;
-}
-@keyframes test-animate-menu-mobile-top{
-    from{
-        left:  -500px;
+@media (min-width: 767.98px){
+    .vsi-header-icon{
+       width: 50px;
+       height: 50px;
+       background-color: #000000;
+       margin-top: 5px;
     }
-    to{
-        left: 0px;
+    .vsi-header-icon:hover{
+        opacity: 0.75;
+        transition: .3s all ease;
     }
-    
- } 
-
-.vsi-fe3-my-navbar-mobile-hide{
-    top: 0;
-    color: white;
-    background-color: black ;
-    position: absolute;
-    display: none;
-    z-index: 1000;
-    padding: 30px 50px;
-}
-
-.vsi-fe3-my-navbar-mobile-show{
-    display: block;
-    animation-name: test-animate-menu-mobile-top;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode:forwards;
-   
-}
-/* .vsi-fe3-header-mobile-animation{
-    display: none;
-} */
-
-
-@media (min-width: 991.98px) {
-    .vsi-fe3-menu-mobile.vsi-fe3-menu-mobile--hide{
-        display: none;
-    }
-   .vsi-fe3-my-navbar-logo-link{
-    width: 65px;
-    height: 60px;
-   }
-    #test-button {
-    display: none;
-    }
-    .vsi-fe3-logo-menu-mobile{
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: none;
-    }
-    #vsi-fe3-btn-menu{
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 9999999999999999999 !important;
-        outline: none;
-        display: none;
-    }
-    
-}
-
-@media (max-width: 991.98px) {
-   
-    header{
-        display: none;
-        z-index: -99;
-    }
-    .vsi-fe3-header-mobile-animation{
-        display: block;
-        z-index: 9;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 80px;
+    .vsi-my-header__content{
+        padding: 20px 5%;
         background-color: white;
-        z-index: 99999999;
     }
- 
-    .vsi-fe3-header-mobile-animation-hide{
-        display: none;
-    }
-    .vsi-fe3-header-mobile-animation-show{
-        display: block;
-    }
-    .vsi-fe3-my-navbarNav-mobile{
-       
-        position: absolute;
-        left: 0 ;
-    }
-    
-    .vsi-fe3-my-navbar-mobile{
-         display: block;
-         margin-right: 100px;
-         /* position: absolute;
-         left: 0; */
-    }
-  
-    .vsi-fe3-my-navbar-mobile ul {
-        margin-left: 0px;
-        display: inline-block;
-    }
-    .vsi-fe3-my-navbar-mobile ul li {
-        text-align: left;
-    }
-    .vsi-fe3-my-navbar-mobile ul li a{
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--black);
-    }
-    .vsi-fe3-my-navbar-mobile ul li a:hover{
-        color: var(--orager);
-    }
-    .vsi-fe3-my-navbarNav-mobile ul{
-        padding-left: 10px;
-        align-items: center;
-    }
-    
-    .vsi-fe3-my-navbar{
-        display: none;
-    }
-    .vsi-fe3-my-navbar-mobile{
-        display: block;
-         margin-right: 100px;
-    }
-    .vsi-fe3-my-navbar-mobile ul {
-        margin-left: 0px;
-        display: inline-block;
-       
-    }
-    .vsi-fe3-my-navbar-mobile ul li {
-        text-align: left;
-    }
-
-    .vsi-fe3-my-navbar-mobile ul li a{
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--black);
-    
-    }
-    .vsi-fe3-my-navbar-mobile ul li a:hover{
-        color: var(--orager);
-    }
-    .vsi-fe3-my-navbarNav-mobile ul{
-        align-items: center;
-    }
-
- }
-
- .vsi-fe3-my-navbarNav-footer-mobile-lang{
-     position: absolute;
-     bottom: 0;
-     color: #858383;
-     font-weight: 600;
-  
- }
- .vsi-fe3-my-navbarNav-footer-mobile-contact{
-    position: absolute;
-    bottom: 0;
-    color: #858383;
-    margin-left: 100px;
-    font-weight: 600;
    
- }
-.vsi-fe3-my-navbarNav-footer-mobile-lang:hover{
-     text-decoration: none;
-     color: #858383;
-     font-weight: 600;
- }
-.vsi-fe3-my-navbarNav-footer-mobile-contact:hover{
-    text-decoration: none;
-    color: #858383;
-    font-weight: 600;
 }
-
-.vsi-fe3-my-navbarNav-footer-mobile-logo{
-    position: absolute;
-    bottom: 2%;
-    right: 2%;
-}
-
-.vsi-fe3-my-navbarNav-footer-mobile-hide{
-    display: none;
-}
-.vsi-fe3-my-navbarNav-footer-mobile-show{
-    display: block;
-}
-
-
-.vsi-fe3-trigger-menu-mobile img{
-    width: 50px;
-    height: 50px;
-}
-
-.vsi-fe3-trigger-menu-mobile{
-    display: flex;
-    justify-content: space-around;   
-    align-items: center;
-    padding: 10px 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100px;
-    width: 100%;
-    background: white;  
-}
-
-@media (min-width: 767.98px)  and (max-width: 991.98px){
-    #btn-test{
-    position: absolute;
-    background-color: transparent;
-    font-size: 25px;
-    width: 40px;
-    top: -8px;
-    right: 3%;
-    }
-}
-@media (min-width: 575.98px)  and (max-width: 767.98px){
-    #btn-test{
-    position: absolute;
-    background-color: transparent;
-    font-size: 25px;
-    width: 40px;
-    top: -8px;
-    right: 1%;
-    }
-}
-@media (max-width: 575.98px) {
-    #btn-test{
-    position: absolute;    
-    background-color: transparent;
-    font-size: 25px;
-    width: 40px;
-    top: -8px;
-    right: 25px;
-    }
-}
-@media (max-width: 991.98px) {
-    .vsi-fe3-menu-mobile{
-        position: fixed;
-         top: 0;
-         left: 0;
-         width: 100vw;
-         height: 100vh;
-         background: #FFF;
-         z-index: 999999999999;
-    }
-    .vsi-fe3-menu-mobile--hide{
-        display: none;
-        z-index: 99999999;
-    }
-    .vsi-fe3-menu-mobile--show{
-        
-        display: block;
-        z-index: 999999999999;
-    }
-    .vsi-fe3-logo-menu-mobile{
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    #vsi-fe3-btn-menu{
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 999999999999999;
-        outline: none;
-    }
-    .test-btn{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .vsi-fe3-logo-menu-mobile{
-        width: 54px;
-        height: 50px;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-    .hamburger .hamburger-inner{
-        width: 16px;
-        height: 2px;
-    }
-    .hamburger .hamburger-inner::before{
-        content: "";
-        width: 9px;
-        right: 0;
-        height: 2px;
-    }
-    .hamburger .hamburger-inner::after{
-        content: "";
-        width: 9px;
-        height: 2px;
-        left:  0;
-    }
-    .hamburger-box {
-        width: 16px;
-        height: 24px;
-        display: inline-block;
-        position: relative;
-    }
-    .hamburger.is-active .hamburger-inner::after {
-        width: 16px;
-    }
-    #test-button{
-        color: #ffffff;
-        font-weight: bold;
-    }
-    .vsi-fe3-my-navbarNav-footer-mobile-logo{
-        width: 42px;
-        height: 24px;
-    }
-    .vsi-fe3-my-navbarNav-footer-mobile{
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin-bottom: 20px;
-        padding: 0 20px 30px;
-        color: #858383;
-    }
-    .vsi-fe3-footer-mobile-logo{
-        font-size: 16px;
+@media (min-width: 1199.98px) {
+    .vsi-header__menu-list a {
+        padding: 20px 10px;
+        font-size: 14px;
+        color: #161616;
         font-weight: 600;
-        color: #161616;  
-        padding-bottom: 60px;
-     
-    }
-    .vsi-fe3-my-navbarNav-footer-mobile-logo-img{
-        width: 16px;
-        height: 20px;
-        margin-right: 15px;
+        margin-right: 40px;
     }
     
+    
+ }
+@media (max-width: 1199.98px){
+    .vsi-header__menu-list a {
+        font-size: 14px;
+        padding: 20px 10px;
+        color: #161616;
+        font-weight: 600;
+    }
+   
+   
 }
-@media (min-width: 767.98px) {
-    /* .vsi-fe3-menu-mobile{
-        display: none;
+@media (max-width: 991.98px){
+    .vsi-header__menu-list a {
+        font-size: 12px;
+        padding: 20px 10px;
+        color: #161616;
     }
-    .vsi-fe3-logo-menu-mobile{
-        display: none;
-    }
-    #vsi-fe3-btn-menu{
-        display: none;
-    }
-    header{
-        display: block;
-    } */
+   
 }
 
-/* End Navbar Mobile */
+@media (max-width: 767.98px){
+   
+    .vsi-header__empty{
+        height: 35px;
+        width: 100%;
+    }
+    .vsi-header-icon{
+        display: none;
+    }
+    .vsi-header__menu-list a {
+        font-size: 20px;
+        color: #161616;
+    }
+    .luxbar-item:first-child{
+        margin-top: 40px;
+    }
+    .vsi-header-logo{
+        width: 55px;
+        height: 50px;
+    }
+    .vsi-header__menu-item li a:hover{
+        color:#161616;
+    }
+}
+@media (max-width: 575.98px){
+    .vsi-my-navbarNav-footer-mobile-contact{
+        position: absolute;
+        bottom: 5%;
+        left: 20%;
+        margin-left: 40px;
+    }
+   
+}
 
 
 
 
 /* CSS footer - start */
+footer{
+    background: linear-gradient(to top, #ffffff 70%,  #f7f9fc  30% );
+}
 .vsi-fe3-footer-position{
     position: relative;
 }
 .vsi-fe3-my-footer__banner{
     width: 100%;
-    position: absolute;
-    bottom: 95%;
+    /* position: absolute;
+    bottom: 95%; */
     background-color: white;
     box-shadow:2px 2px 20px 5px #f5f5f5;
   
@@ -491,6 +323,7 @@ header{
     } 
     .vsi-fe3-my-footer__banner{
         padding: 40px 30px;
+        /* width: 100%; */
     }
     
     .vsi-fe3-footer__banner--item{
@@ -507,12 +340,9 @@ header{
     .vsi-fe3-my-footer__content--item img {
         width: 45px;
         height: 25px;
-        
     }
     
 }
-
-
 .vsi-fe3-my-footer__content--item-link{
     text-decoration: none;
     color: #cacaca;
@@ -569,6 +399,9 @@ header{
         color: #000000;
         text-align: left;
     }
+    .vsi-fe3-my-footer__banner--btn-right{
+        display: none;
+    }
 }
 @media (min-width:991.98px){
     .vsi-fe3-my-footer__banner--btn-left{
@@ -577,14 +410,10 @@ header{
 }
 @media (min-width:991.98px) and (max-width :1199.98px){
 .vsi-fe3-footer__banner--img{
-    width: 250px;
-}
-}
-@media(max-width :992.98px){
-    .vsi-fe3-my-footer__banner--btn-right{
-        display: none;
+    width: 240px;
     }
 }
+
 
 
 /* CSS footer - end */
@@ -1776,8 +1605,8 @@ lottie-player{
     }
     .vsi-fe3-our-solutions{
         background-color: var(--light-gray);
-        clip-path: polygon(100% 0, 0 0, 0 98%, 100% 100%);
-        padding: 150px 0;
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+        /* padding: 150px 0; */
         
     }
     .vsi-fe3-our-solutions{
@@ -1933,3 +1762,4 @@ lottie-player{
 
 }
 /* CSS solution - end*/
+

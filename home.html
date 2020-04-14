@@ -11,8 +11,10 @@
     <meta name="author" content="Author" />
 
     <!-- import CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/import.css">
     <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+    
 
     <!-- import JS -->
     <script type="text/javascript" src="assets/lib/jquery-3.4.1.min.js"></script>
@@ -27,49 +29,68 @@
 <body>
     <!-- Start Header -->
 
-    <header class="vsi-fe3-header-animation">
-        <div class="container">
-            <div class="vsi-fe3-my-header ">
+    <header id="luxbar" class="luxbar-fixed vsi-my-header vsi-fe3-header-animation">
+        <div class="vsi-my-header__content">
+            <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
 
-                <nav class="navbar navbar-expand   vsi-fe3-my-navbar">
-                    <a class="navbar-brand" href="#" class="vsi-fe3-my-navbar-logo-link">
-                        <img src="assets/images/logo/logo-full.png" alt="" class="my-logo">
-                    </a>
-                    <div class="collapse navbar-collapse vsi-fe3-my-navbarNav" id="navbarNav">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item ">
-                                <a class="nav-link  p-0" href="#">THE ZUZU DIFFERENCE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link  p-0" href="#">OUR SOLUSITONS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link  p-0" href="#">PARTNER STORIES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-0" href="#">ABOUT US</a>
-                            </li>
-                            <li class="nav-item vsi-fe3-li">
-                                <div class="vsi-fe3-test">
-                                    <a class="nav-link  p-0  vsi-fe3-link ml-0" href="#">
-                                        <img src="assets/images/logo/icon.png" alt="">
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
+            <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-cyan vsi-my-header-menu">
+
+                <ul class="luxbar-navigation vsi-header__menu-list">
+
+                    <li class="luxbar-header">
+                        <a class="luxbar-brand" href="#"> <img src="assets/images/logo/logo-full.png" alt=""
+                                class="vsi-header-logo"> </a>
+                        <label class="luxbar-hamburger luxbar-hamburger-spin " id="luxbar-hamburger"
+                            for="luxbar-checkbox">
+                            <span class="vsi-header__btn-menu--custom"></span>
+                            <!-- <div id="vsi-header-custom-btn-menu-mobile-box" class="vsi-header-custom-btn-menu-mobile-box">
+                                <span id="vsi-header-custom-btn-menu-mobile-inner" class="vsi-header-custom-btn-menu-mobile-inner"></span>
+                            </div> -->
+                        </label>
+                    </li>
+
+                    <div class="luxbar-navigation vsi-header__menu-item ">
+                        <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">HOME</a></li>
+                        <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">THE ZUZU DIFFERENCE</a></li>
+                        <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">OUR SOLUSITONS</a></li>
+                        <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">PARTNER STORIES</a></li>
+                        <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">ABOUT US</a></li>
                     </div>
 
-
-                </nav>
+                    <button class="vsi-header-icon"> <img src="assets/images/logo/icon.png" alt=""></button>
+                    <div class="vsi-header_menu-test">
+                        <img src="assets/images/logo/bitmap.png" alt="">
+                        <a href="#" class=" vsi-header__menu-login vsi-header_menu-test">LOGIN</a>
+                    </div>
+                </ul>
             </div>
-        </div>
-    </header>
 
+            <button class="vsi-header__menu-btn-mb" id="">Get a free consultation</button>
+            <div class="vsi-my-navbarNav-footer-mobile  ">
+                <div class="vsi-my-navbarNav-footer-mobile-content">
+                    <a href="" class="vsi-my-navbarNav-footer-mobile-lang ">
+                        <i class="fa fa-globe mr-1"></i>
+                        English
+                    </a>
+                    <a href="" class="vsi-my-navbarNav-footer-mobile-contact ">
+                        <i class="fa fa-phone-alt"></i>
+                        Contact Us
+                    </a>
+                    <img src="assets/images/logo/logo.png" alt="" class="vsi-my-navbarNav-footer-mobile-logo">
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
     <!-- End Header -->
 
     <main>
+        <div class="vsi-header__empty"> </div>
+
         <!-- banner - start -->
-         <section>
+        <section>
             <div class="vsi-fe1-banner mt-5">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -82,7 +103,9 @@
                                                 <h1>
                                                     <span>Unleash your <div class="vsi-fe1-block-mbl"></div> potential
                                                         with<div class="vsi-fe1-block-ipad"></div>the</span>
-                                                    <div class="vsi-fe1-block-mbl"></div>chain for<div class="vsi-fe1-block-mbl"></div>independent<div class="vsi-fe1-block-mbl vsi-fe1-block-ipad-all"></div>
+                                                    <div class="vsi-fe1-block-mbl"></div>chain for<div
+                                                        class="vsi-fe1-block-mbl"></div>independent<div
+                                                        class="vsi-fe1-block-mbl vsi-fe1-block-ipad-all"></div>
                                                     hotels
                                                 </h1>
                                                 <p>
@@ -110,7 +133,9 @@
                                                 <h1>
                                                     <span>Unleash your <div class="vsi-fe1-block-mbl"></div> potential
                                                         with<div class="vsi-fe1-block-ipad"></div>the</span>
-                                                    <div class="vsi-fe1-block-mbl"></div>chain for<div class="vsi-fe1-block-mbl"></div>independent<div class="vsi-fe1-block-mbl vsi-fe1-block-ipad-all"></div>
+                                                    <div class="vsi-fe1-block-mbl"></div>chain for<div
+                                                        class="vsi-fe1-block-mbl"></div>independent<div
+                                                        class="vsi-fe1-block-mbl vsi-fe1-block-ipad-all"></div>
                                                     hotels
                                                 </h1>
                                                 <p>
@@ -138,7 +163,9 @@
                                                 <h1>
                                                     <span>Unleash your <div class="vsi-fe1-block-mbl"></div> potential
                                                         with<div class="vsi-fe1-block-ipad"></div>the</span>
-                                                    <div class="vsi-fe1-block-mbl"></div>chain for<div class="vsi-fe1-block-mbl"></div>independent<div class="vsi-fe1-block-mbl vsi-fe1-block-ipad-all"></div>
+                                                    <div class="vsi-fe1-block-mbl"></div>chain for<div
+                                                        class="vsi-fe1-block-mbl"></div>independent<div
+                                                        class="vsi-fe1-block-mbl vsi-fe1-block-ipad-all"></div>
                                                     hotels
                                                 </h1>
                                                 <p>
@@ -166,7 +193,9 @@
                                                 <h1>
                                                     <span>Unleash your <div class="vsi-fe1-block-mbl"></div> potential
                                                         with<div class="vsi-fe1-block-ipad"></div>the</span>
-                                                    <div class="vsi-fe1-block-mbl"></div>chain for<div class="vsi-fe1-block-mbl"></div>independent<div class="vsi-fe1-block-mbl vsi-fe1-block-ipad-all"></div>
+                                                    <div class="vsi-fe1-block-mbl"></div>chain for<div
+                                                        class="vsi-fe1-block-mbl"></div>independent<div
+                                                        class="vsi-fe1-block-mbl vsi-fe1-block-ipad-all"></div>
                                                     hotels
                                                 </h1>
                                                 <p>
@@ -565,84 +594,8 @@
 
     <!-- End Footer -->
 
-    <!-- Menu Mobile Start -->
 
-    <div class="vsi-fe3-menu-mobile vsi-fe3-menu-mobile--hide">
-        <button class="vsi-fe3-my-navbar-mobile-hide  mb-5" id="test-button">Get a free consultation</button>
-
-        <!-- <button  type="button" id="btn-test">
-            X
-        </button> -->
-
-        <button class="hamburger hamburger--spin" type="button" id="btn-test">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-
-
-        <div class="navbar navbar-expand-lg   vsi-fe3-my-navbar-mobile ">
-            <div class="collapse navbar-collapse vsi-fe3-my-navbarNav-mobile" id="navbarNav">
-                <ul class="navbar-nav ">
-                    <li class="nav-item  ">
-                        <a class="nav-link  p-0" href="#">THE ZUZU DIFFERENCE</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link  p-0" href="#">OUR SOLUSITONS</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link  p-0" href="#">PARTNER STORIES</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link p-0" href="#">ABOUT US</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link p-0" href="#">ABOUT US</a>
-                    </li>
-
-                </ul>
-
-            </div>
-        </div>
-
-
-        <div class="vsi-fe3-my-navbarNav-footer-mobile vsi-fe3-my-navbarNav-footer-mobile-hide  ">
-
-            <a href="" class="vsi-fe3-footer-mobile-logo">
-                <span> <img src="assets/images/logo/bitmap.png" alt=""
-                        class="vsi-fe3-my-navbarNav-footer-mobile-logo-img "> </span>
-                LOG IN
-            </a>
-
-
-            <div class="vsi-fe3-my-navbarNav-footer-mobile-bot">
-                <a href="" class="vsi-fe3-my-navbarNav-footer-mobile-lang ">
-                    <i class="fa fa-globe mr-1"></i>
-                    English
-                </a>
-                <a href="" class="vsi-fe3-my-navbarNav-footer-mobile-contact ">
-                    <i class="fa fa-phone-alt"></i>
-                    Contact Us
-                </a>
-                <img src="assets/images/logo/logo.png" alt="" class="vsi-fe3-my-navbarNav-footer-mobile-logo">
-            </div>
-
-        </div>
-    </div>
-
-    <div class="vsi-fe3-header-mobile-animation">
-        <img src="assets/images/logo/logo-full.png" alt="" class="my-logo vsi-fe3-logo-menu-mobile">
-        <button class="hamburger hamburger--spin  navbar-toggler" data-toggle="collapse" type="button"
-            id="vsi-fe3-btn-menu" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-    </div>
-
-    <!-- End Menu Mobile -->
+    
 
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/home.js"></script>

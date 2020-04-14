@@ -11,8 +11,9 @@
     <meta name="author" content="Author" />
 
     <!-- import CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/import.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/home.css"> -->
     <link rel="stylesheet" href="assets/css/the-zuzu-difference.css">
 
     <!-- import JS -->
@@ -26,45 +27,67 @@
 </head>
 
 <body>
-    <!-- Start Header -->
-    <header>
-        <div class="container">
-            <div class="vsi-fe3-my-header ">
+   <!-- Start Header -->
 
-                <nav class="navbar navbar-expand-lg   vsi-fe3-my-navbar">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/images/logo/logo-full.png" alt="" class="my-logo">
-                    </a>
-                    <div class="collapse navbar-collapse vsi-fe3-my-navbarNav" id="navbarNav">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item ">
-                                <a class="nav-link  p-0" href="#">THE ZUZU DIFFERENCE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link  p-0" href="#">OUR SOLUSITONS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link  p-0" href="#">PARTNER STORIES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-0" href="#">ABOUT US</a>
-                            </li>
-                            <li class="nav-item vsi-fe3-li">
-                                <div class="vsi-fe3-test">
-                                    <a class="nav-link  p-0  vsi-fe3-link ml-0" href="#">
-                                        <img src="assets/images/logo/icon.png" alt="">
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+   <header id="luxbar" class="luxbar-fixed vsi-my-header vsi-fe3-header-animation">
+    <div class="vsi-my-header__content">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-cyan vsi-my-header-menu">
+
+            <ul class="luxbar-navigation vsi-header__menu-list">
+
+                <li class="luxbar-header">
+                    <a class="luxbar-brand" href="#"> <img src="assets/images/logo/logo-full.png" alt=""
+                            class="vsi-header-logo"> </a>
+                    <label class="luxbar-hamburger luxbar-hamburger-spin " id="luxbar-hamburger"
+                        for="luxbar-checkbox">
+                        <span class="vsi-header__btn-menu--custom"></span>
+                        <!-- <div id="vsi-header-custom-btn-menu-mobile-box" class="vsi-header-custom-btn-menu-mobile-box">
+                            <span id="vsi-header-custom-btn-menu-mobile-inner" class="vsi-header-custom-btn-menu-mobile-inner"></span>
+                        </div> -->
+                    </label>
+                </li>
+
+                <div class="luxbar-navigation vsi-header__menu-item ">
+                    <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">HOME</a></li>
+                    <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">THE ZUZU DIFFERENCE</a></li>
+                    <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">OUR SOLUSITONS</a></li>
+                    <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">PARTNER STORIES</a></li>
+                    <li class="luxbar-item vsi-header__menu-item-opacity"><a href="#">ABOUT US</a></li>
+                </div>
+
+                <button class="vsi-header-icon"> <img src="assets/images/logo/icon.png" alt=""></button>
+                <div class="vsi-header_menu-test">
+                    <img src="assets/images/logo/bitmap.png" alt="">
+                    <a href="#" class=" vsi-header__menu-login vsi-header_menu-test">LOGIN</a>
+                </div>
+            </ul>
+        </div>
+
+        <button class="vsi-header__menu-btn-mb" id="">Get a free consultation</button>
+        <div class="vsi-my-navbarNav-footer-mobile  ">
+            <div class="vsi-my-navbarNav-footer-mobile-content">
+                <a href="" class="vsi-my-navbarNav-footer-mobile-lang ">
+                    <i class="fa fa-globe mr-1"></i>
+                    English
+                </a>
+                <a href="" class="vsi-my-navbarNav-footer-mobile-contact ">
+                    <i class="fa fa-phone-alt"></i>
+                    Contact Us
+                </a>
+                <img src="assets/images/logo/logo.png" alt="" class="vsi-my-navbarNav-footer-mobile-logo">
             </div>
         </div>
-    </header>
-    <!-- End Header -->
+
+
+    </div>
+
+</header>
+<!-- End Header -->
     <!-- Start content -->
     <main>
+        <div class="vsi-header__empty"> </div>
         <section>
             <div class="vsi-fe1-banner vsi-fe1-clip-path">
                 <div class="container">
@@ -173,7 +196,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3">
-                                <div class="vsi-fe1-img-step">
+                                <div class="vsi-fe1-img-step vsi-fe1-last">
                                     <div class="vsi-fe1-block-img">
                                         <lottie-player class="vsi-fe1-mg-btn"
                                             src="https://assets3.lottiefiles.com/packages/lf20_hQYA4K.json"
@@ -191,7 +214,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="vsi-fe1-img-step">
-                                    <div class="vsi-fe1-block-img">
+                                    <div class="vsi-fe1-block-img vsi-fe1-last">
                                         <lottie-player class="vsi-fe1-mg-btn"
                                             src="https://assets6.lottiefiles.com/packages/lf20_oj415f.json"
                                             background="transparent" speed="0.6" style="width: 160px;height: 160px;"
@@ -208,7 +231,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="vsi-fe1-img-step">
-                                    <div class="vsi-fe1-block-img">
+                                    <div class="vsi-fe1-block-img vsi-fe1-last">
                                         <lottie-player class="vsi-fe1-mg-btn"
                                             src="https://assets2.lottiefiles.com/packages/lf20_lsbzTG.json"
                                             background="transparent" speed="0.6" style="width: 160px;height: 160px;"
@@ -293,19 +316,27 @@
     </main>
     <!-- End content -->
     <!-- Start Footer -->
+
     <footer>
-        <div class="container">
+        <div class="container vsi-fe3-footer-position ">
             <div class="vsi-fe3-my-footer">
                 <div class="vsi-fe3-my-footer__banner">
                     <div class="row">
                         <div class="col-12 col-md-6 vsi-fe3-footer__banner--item">
-                            <div class="vsi-fe3-footer__banner--item-content">
+                            <div class="vsi-fe3-footer__banner--item-content text-left">
                                 <h2>Ready to get started?</h2>
                                 <p>We’re responsive, we promise.</p>
+                                <button
+                                    class="btn btn-primary vsi-fe3-my-footer__banner--btn  vsi-fe3-my-footer__banner--btn-left">Get
+                                    a free
+                                    consultation</button>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 vsi-fe3-footer__banner--item">
-                            <button class="btn btn-primary vsi-fe3-my-footer__banner--btn">Get a free
+
+                            <button
+                                class="btn btn-primary vsi-fe3-my-footer__banner--btn vsi-fe3-my-footer__banner--btn-right">Get
+                                a free
                                 consultation</button>
                             <img src="assets/images/logo/footer.png" alt="" class="vsi-fe3-footer__banner--img">
                         </div>
@@ -387,7 +418,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="vsi-fe3-my-footer__bottom mb-2">
+                <div class="vsi-fe3-my-footer__bottom ">
                     <div class="container">
                         <div class="row ">
                             <div class="col-12 col-md-6 vsi-fe3-my-footer__bottom--item">
@@ -403,6 +434,7 @@
             </div>
         </div>
     </footer>
+
     <!-- End Footer -->
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/home.js"></script>

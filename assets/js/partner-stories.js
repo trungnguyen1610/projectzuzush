@@ -1,57 +1,47 @@
 // js header - start 
-$(window).scroll(function () {
+$("#luxbar-hamburger").on("click", function (e) {
+ 
+    $(".vsi-header__menu-btn-mb").toggleClass("vsi-header__menu-btn-mb-show");
+ 
+    $(".vsi-header__menu-item-opacity").toggleClass("vsi-header__menu-item-opacity-show");
+    setTimeout(function () {
+            $(".vsi-my-navbarNav-footer-mobile").toggleClass("vsi-my-navbarNav-footer-mobile-show");
+            
 
-    if ($(this).scrollTop() > 0) {
-        $('.vsi-fe3-my-header').addClass("vsi-fe3__header--animation");
+    }, 250);
+
+    setTimeout(function () {
+            $(".vsi-header_menu-test").toggleClass("vsi-header_menu-test-show");
+           
+            $(".vsi-header__menu-item").toggleClass("vsi-header__menu-item-show");
+
+    }, 1000);
+    $('body').toggleClass('overflow-hidden');
+    $('body').bind('touchmove', function(e){e.preventDefault()})
+    $('body').unbind('touchmove')
+
+
+
+});
+
+var lastScrollTop = 0;
+$(window).scroll(function (event) {
+var st = $(this).scrollTop();
+if (st > lastScrollTop) {
+        
+    if (!$(".vsi-fe3-header-animation").hasClass("vsi-fe3-header-animation-hide")) {
+        $(".vsi-fe3-header-animation").addClass("vsi-fe3-header-animation-hide");
+        $(".vsi-fe3-header-animation").removeClass("vsi-fe3-header-animation-show");
     }
-    else {
-        $('.vsi-fe3-my-header').removeClass("vsi-fe3__header--animation");
+} else {
+    
+    if (!$(".vsi-fe3-header-animation").hasClass("vsi-fe3-header-animation-show")) {
+        $(".vsi-fe3-header-animation").removeClass("vsi-fe3-header-animation-hide");
+        $(".vsi-fe3-header-animation").addClass("vsi-fe3-header-animation-show");
     }
- });
- 
- 
- 
- $("#vsi-fe3-btn-menu").click(function () {
-    $(".vsi-fe3-my-navbarNav-mobile").addClass("vsi-fe3-animation-menu-mobile ");
- });
- 
- $("#vsi-fe3-btn-menu").click(function () {     
-    if ( !$(".vsi-fe3-my-navbar-mobile-hide").hasClass("vsi-fe3-my-navbar-mobile-show")) {
-        $(".vsi-fe3-my-navbar-mobile-hide").addClass("vsi-fe3-my-navbar-mobile-show");
-    } 
-    else if ($(".vsi-fe3-my-navbar-mobile-hide").hasClass("vsi-fe3-my-navbar-mobile-show")) {
-        $(".vsi-fe3-my-navbar-mobile-hide").removeClass("vsi-fe3-my-navbar-mobile-show");
-    }
- });
- 
- $("#vsi-fe3-btn-menu").click(function () {     
-    if ( !$(".vsi-fe3-my-navbarNav-footer-mobile-hide").hasClass("vsi-fe3-my-navbarNav-footer-mobile-show")) {
-        $(".vsi-fe3-my-navbarNav-footer-mobile-hide").addClass("vsi-fe3-my-navbarNav-footer-mobile-show");
-    } 
-    else if ($(".vsi-fe3-my-navbarNav-footer-mobile-hide").hasClass("vsi-fe3-my-navbarNav-footer-mobile-show")) {
-        $(".vsi-fe3-my-navbarNav-footer-mobile-hide").removeClass("vsi-fe3-my-navbarNav-footer-mobile-show");
-    }
- });
- 
- 
- 
-  $("#vsi-fe3-btn-menu").click(function () {     
-      console.log("a");
-    if ( !$(".vsi-fe3-menu-mobile--hide").hasClass("vsi-fe3-menu-mobile--show")) {
-        $(".vsi-fe3-menu-mobile--hide").addClass("vsi-fe3-menu-mobile--show");
-    } 
-    else if ($(".vsi-fe3-menu-mobile--hide").hasClass("vsi-fe3-menu-mobile--show")) {
-        $(".vsi-fe3-menu-mobile--hide").removeClass("vsi-fe3-menu-mobile--show");
-    }
- });
- 
- 
-   var $hamburger = $(".hamburger");
-   $hamburger.on("click", function(e) {
-     $hamburger.toggleClass("is-active");
-     // Do something else, like open/close menu
-   });
- 
+}
+lastScrollTop = st;
+});
   // js header - end
   
    //js main - start
